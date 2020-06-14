@@ -73,12 +73,44 @@ require_once trailingslashit( get_stylesheet_directory() ) . 'shortcodes.php';
 //==
 
 //== Functions
+/**
+ * Check if page is being loaded from mobile device, based on network headers
+ * 
+ * @return boolean
+ */
 function isMobile() {
 	return preg_match("/\b(?:a(?:ndroid|vantgo)|b(?:lackberry|olt|o?ost)|cricket|docomo|hiptop|i(?:emobile|p[ao]d)|kitkat|m(?:ini|obi)|palm|(?:i|smart|windows )phone|symbian|up\.(?:browser|link)|tablet(?: browser| pc)|(?:hp-|rim |sony )tablet|w(?:ebos|indows ce|os))/i", $_SERVER["HTTP_USER_AGENT"]);
 }
 
-function is_blog () {
+/**
+ * Check if is blog page
+ * 
+ * @return boolean
+ */
+function is_blog() {
 	return ( is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type();
+}
+
+/**
+ * Get top parent for the current page
+ *
+ * If the page is the highest level page, it will return it's own ID, or
+ * if the page has parent(s) it will get the highest level page ID. 
+ *
+ * @return integer
+ */
+function get_top_parent_page_id() {
+    global $post;
+    $ancestors = $post->ancestors;
+
+    // Check if the page is a child page (any level)
+    if ($ancestors) {
+        //  Get the ID of top-level page from the tree
+        return end($ancestors);
+    } else {
+        // The page is the top level, so use its own ID
+        return $post->ID;
+    }
 }
 //==
 
