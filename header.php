@@ -22,25 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </head>
 
 <body <?php astra_schema_body(); ?> <?php body_class(); ?>>
-<?php
 
-// let's test custom is_header_tree here (let's call it has_ancestor())
-/**
- * Check if page is a parent/ancestor of current page
- * 
- * @param string
- * @return boolean
- */
-
- function has_ancestor() {
-    global $post;
-    $ancestors = $post->ancestors;
- }
-
-echo '<span class="test">' . get_top_parent_page_id() . '</span>';
-
-
-?>
 <?php astra_body_top(); ?>
 <?php wp_body_open(); ?>
 <div 

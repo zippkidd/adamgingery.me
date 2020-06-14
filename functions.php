@@ -112,6 +112,21 @@ function get_top_parent_page_id() {
         return $post->ID;
     }
 }
+
+/**
+ * Check if page is a parent/ancestor of current page
+ * 
+ * @param integer
+ * @return boolean
+ */
+
+function has_ancestor( $ancestorPageID ) {
+    $ancestorsArr = get_post_ancestors( get_the_ID() );
+    if ( in_array( $ancestorPageID, $ancestorsArr) ) {
+        return true;
+    }
+    return false;
+ }
 //==
 
 //== Remove Comments
