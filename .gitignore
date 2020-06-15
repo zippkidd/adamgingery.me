@@ -11,3 +11,6 @@
 
 # Node
 /node_modules
+
+# Astra generated <header> example
+/headermasthead.html
