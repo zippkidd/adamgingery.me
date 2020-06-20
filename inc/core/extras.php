@@ -834,38 +834,56 @@ if ( ! function_exists( 'astra_primary_navigation_markup' ) ) {
 			$items_wrap .= '</nav>';
 
 			// Primary Menu.
-			$primary_menu_args = array(
+			// $primary_menu_args = array(
+			// 	'theme_location'  => 'primary',
+			// 	'menu_id'         => 'primary-menu',
+			// 	'menu_class'      => esc_attr( implode( ' ', $primary_menu_classes ) ),
+			// 	'container'       => 'div',
+			// 	'container_class' => 'main-header-bar-navigation',
+			// 	'items_wrap'      => $items_wrap,
+            // );
+
+            /* Alternate $primary_menu_args 'menu' value to alternate silo menus */
+            $primary_menu_args = array(
+                'menu'            => 'Primary Menu',
 				'theme_location'  => 'primary',
 				'menu_id'         => 'primary-menu',
 				'menu_class'      => esc_attr( implode( ' ', $primary_menu_classes ) ),
 				'container'       => 'div',
 				'container_class' => 'main-header-bar-navigation',
 				'items_wrap'      => $items_wrap,
-			);
+            );
+            /* *** */
+            
+            /* *** */
+            echo '<div ' . astra_attr( 'ast-main-header-bar-alignment' ) . '>';
+                wp_nav_menu( $primary_menu_args );
+            echo '</div>';
+            /* *** */
 
-			if ( has_nav_menu( 'primary' ) ) {
-				// To add default alignment for navigation which can be added through any third party plugin.
-				// Do not add any CSS from theme except header alignment.
-				echo '<div ' . astra_attr( 'ast-main-header-bar-alignment' ) . '>';
-					wp_nav_menu( $primary_menu_args );
-				echo '</div>';
-			} else {
+			// if ( has_nav_menu( 'primary' ) ) {
+			// 	// To add default alignment for navigation which can be added through any third party plugin.
+			// 	// Do not add any CSS from theme except header alignment.
+			// 	echo '<div ' . astra_attr( 'ast-main-header-bar-alignment' ) . '>';
+			// 		wp_nav_menu( $primary_menu_args );
+			// 	echo '</div>';
+			// } else {
 
-				echo '<div ' . astra_attr( 'ast-main-header-bar-alignment' ) . '>';
-					echo '<div class="main-header-bar-navigation">';
-						echo '<nav ';
-						echo astra_attr(
-							'site-navigation',
-							array(
-								'id' => 'site-navigation',
-							)
-						);
-						echo ' class="ast-flex-grow-1 navigation-accessibility" aria-label="' . esc_attr__( 'Site Navigation', 'astra' ) . '">';
-							wp_page_menu( $fallback_menu_args );
-						echo '</nav>';
-					echo '</div>';
-				echo '</div>';
-			}
+			// 	echo '<div ' . astra_attr( 'ast-main-header-bar-alignment' ) . '>';
+			// 		echo '<div class="main-header-bar-navigation">';
+			// 			echo '<nav ';
+			// 			echo astra_attr(
+			// 				'site-navigation',
+			// 				array(
+			// 					'id' => 'site-navigation',
+			// 				)
+			// 			);
+			// 			echo ' class="ast-flex-grow-1 navigation-accessibility" aria-label="' . esc_attr__( 'Site Navigation', 'astra' ) . '">';
+			// 				wp_page_menu( $fallback_menu_args );
+			// 			echo '</nav>';
+			// 		echo '</div>';
+			// 	echo '</div>';
+			// }
 		}
 
 	}
