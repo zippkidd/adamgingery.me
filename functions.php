@@ -354,7 +354,7 @@ if ( !defined( "MUSIC_MENU" ))  {
 	define( "MUSIC_MENU", "Music" );
 }
 
-// Marketing
+// Digital Marketing
 if ( !defined( "MARKETING_CATEGORY" ))  {
 	define( "MARKETING_CATEGORY", 6 );
 }
@@ -365,7 +365,7 @@ if ( !defined( "MARKETING_MENU" ))  {
 	define( "MARKETING_MENU", "Marketing" );
 }
 
-// Podcast
+// Backstage Podcast
 if ( !defined( "PODCAST_CATEGORY" ))  {
 	define( "PODCAST_CATEGORY", 7 );
 }
