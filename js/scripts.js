@@ -84,8 +84,9 @@
 // Transpiled below with Babel
 
 (function () {
-  'use strict'; // Add scrolled class to body
-
+  'use strict';
+  
+  // Add scrolled class to body
   var last_known_scroll_position = 0;
   var ticking = false;
 
@@ -113,13 +114,10 @@
 
   function domLoaded() {
     //== Variables
-    var mobileHdrCTA = document.createElement('a');
-    mobileHdrCTA.append('Enroll Today');
-    mobileHdrCTA.classList.add('mobile-header-cta');
-    mobileHdrCTA.href = '/contact-us/'; //== Selectors
-
     header = document.getElementById('masthead');
-    var menuItems = header.querySelectorAll('li a'); //== Functions
+    var menuItems = header.querySelectorAll('li a');
+    
+    //== Functions
     // Make Dead link menu items into span
     // menuItems = [...menuItems];
     // menuItems.forEach( link => {
@@ -127,15 +125,11 @@
     // 		link.outerHTML = `<span>${link.innerHTML}</span>`;
     // 	}
     // });
-
     for (var i = 0; i < menuItems.length; i++) {
       if (menuItems[i].getAttribute('href') === '#') {
         menuItems[i].outerHTML = "<span>".concat(menuItems[i].innerHTML, "</span>");
       }
-    } // Add Mobile CTA
-
-
-    header.querySelector('.ast-site-identity').append(mobileHdrCTA);
+    }    
   }
 
   function allLoaded() {
