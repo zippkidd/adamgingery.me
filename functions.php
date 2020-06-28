@@ -58,6 +58,10 @@ if ( !is_admin() ) {
 }
 //==
 
+//== Include Shortcodes
+require_once trailingslashit( get_stylesheet_directory() ) . 'shortcodes.php';
+//==
+
 //== Astra Parent Theme Overrides
 
 // Remove premium options, add White Label
@@ -139,7 +143,7 @@ function astra_primary_navigation_markup() {
 
 		// Primary Menu.
 		$primary_menu_args = array(
-			'menu'			  => 'Secondary Menu',
+			'menu'			  => resolvePrimaryMenu(),
 			'theme_location'  => 'primary',
 			'menu_id'         => 'primary-menu',
 			'menu_class'      => esc_attr( implode( ' ', $primary_menu_classes ) ),
@@ -164,10 +168,6 @@ add_action( 'astra_masthead_content', 'astra_primary_navigation_markup', 10 );
 // add_filter( 'astra_enable_default_fonts', '__return_false' );
 //==
 
-//== Include Shortcodes
-require_once trailingslashit( get_stylesheet_directory() ) . 'shortcodes.php';
-//==
-
 //== Functions
 /**
  * Check if page is being loaded from mobile device, based on network headers
@@ -183,7 +183,7 @@ function isMobile() {
  * 
  * @return boolean
  */
-function is_blog() {
+function isBlog() {
 	return ( is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type();
 }
 
@@ -215,14 +215,30 @@ function get_top_parent_page_id() {
  * @param integer
  * @return boolean
  */
-
-function has_ancestor( $ancestorPageID ) {
+function hasAncestor( $ancestorPageID ) {
     $ancestorsArr = get_post_ancestors( get_the_ID() );
     if ( in_array( $ancestorPageID, $ancestorsArr) ) {
         return true;
     }
     return false;
  }
+
+ /**
+  * Resolve which silo menu to display
+  *
+  * @return string
+  */
+function resolvePrimaryMenu() {
+	if ( hasAncestor(MUSIC_ANCESTOR) ) {
+		return MUSIC_MENU;
+	} elseif ( hasAncestor(MARKETING_ANCESTOR) ) {
+		return MARKETING_MENU;
+	} elseif ( hasAncestor(PODCAST_ANCESTOR) ) {
+		return PODCAST_MENU;
+	} else {
+		return 'Primary';
+	}
+}
 //==
 
 //== Remove Comments
@@ -317,4 +333,36 @@ function my_deregister_styles()    {
 		wp_deregister_style( 'dashicons'); 
 }
 add_action( 'wp_print_styles', 'my_deregister_styles', 100 );
+//==
+
+//== Constants
+if ( !defined( "MUSIC_CATEGORY" ))  {
+	define( "MUSIC_CATEGORY", 5 );
+}
+if ( !defined( "MUSIC_ANCESTOR" ))  {
+	define( "MUSIC_ANCESTOR", 33 );
+}
+if ( !defined( "MUSIC_MENU" ))  {
+	define( "MUSIC_MENU", "Music" );
+}
+
+if ( !defined( "MARKETING_CATEGORY" ))  {
+	define( "MARKETING_CATEGORY", 6 );
+}
+if ( !defined( "MARKETING_ANCESTOR" ))  {
+	define( "MARKETING_ANCESTOR", 25 );
+}
+if ( !defined( "MARKETING_MENU" ))  {
+	define( "MARKETING_MENU", "Marketing" );
+}
+
+if ( !defined( "PODCAST_CATEGORY" ))  {
+	define( "PODCAST_CATEGORY", 7 );
+}
+if ( !defined( "PODCAST_ANCESTOR" ))  {
+	define( "PODCAST_ANCESTOR", 27 );
+}
+if ( !defined( "PODCAST_MENU" ))  {
+	define( "PODCAST_MENU", "Podcast" );
+}
 //==
