@@ -210,17 +210,24 @@ function get_top_parent_page_id() {
 }
 
 /**
- * Check if page is a parent/ancestor of current page
+ * Check if page is related to the passed parent page
  * 
  * @param integer
  * @return boolean
  */
-function hasAncestor( $ancestorPageID ) {
-    $ancestorsArr = get_post_ancestors( get_the_ID() );
-    if ( in_array( $ancestorPageID, $ancestorsArr) ) {
-        return true;
-    }
-    return false;
+function isRelated( $ancestorPageID ) {
+	$pageID = get_the_ID();
+	$ancestorsArr = get_post_ancestors( $pageID );
+	if ($ancestorsArr ) {
+		if ( in_array( $ancestorPageID, $ancestorsArr) ) {
+			return true;
+		}
+	} else {
+		if ( $ancestorPageID === $pageID ) {
+			return true;
+		}
+	}
+	return false;
  }
 
  /**
@@ -229,11 +236,11 @@ function hasAncestor( $ancestorPageID ) {
   * @return string
   */
 function resolvePrimaryMenu() {
-	if ( hasAncestor(MUSIC_ANCESTOR) ) {
+	if ( isRelated(MUSIC_PARENT) ) {
 		return MUSIC_MENU;
-	} elseif ( hasAncestor(MARKETING_ANCESTOR) ) {
+	} elseif ( isRelated(MARKETING_PARENT) ) {
 		return MARKETING_MENU;
-	} elseif ( hasAncestor(PODCAST_ANCESTOR) ) {
+	} elseif ( isRelated(PODCAST_PARENT) ) {
 		return PODCAST_MENU;
 	} else {
 		return 'Primary';
@@ -336,31 +343,34 @@ add_action( 'wp_print_styles', 'my_deregister_styles', 100 );
 //==
 
 //== Constants
+// Music
 if ( !defined( "MUSIC_CATEGORY" ))  {
 	define( "MUSIC_CATEGORY", 5 );
 }
-if ( !defined( "MUSIC_ANCESTOR" ))  {
-	define( "MUSIC_ANCESTOR", 33 );
+if ( !defined( "MUSIC_PARENT" ))  {
+	define( "MUSIC_PARENT", 33 );
 }
 if ( !defined( "MUSIC_MENU" ))  {
 	define( "MUSIC_MENU", "Music" );
 }
 
+// Marketing
 if ( !defined( "MARKETING_CATEGORY" ))  {
 	define( "MARKETING_CATEGORY", 6 );
 }
-if ( !defined( "MARKETING_ANCESTOR" ))  {
-	define( "MARKETING_ANCESTOR", 25 );
+if ( !defined( "MARKETING_PARENT" ))  {
+	define( "MARKETING_PARENT", 25 );
 }
 if ( !defined( "MARKETING_MENU" ))  {
 	define( "MARKETING_MENU", "Marketing" );
 }
 
+// Podcast
 if ( !defined( "PODCAST_CATEGORY" ))  {
 	define( "PODCAST_CATEGORY", 7 );
 }
-if ( !defined( "PODCAST_ANCESTOR" ))  {
-	define( "PODCAST_ANCESTOR", 27 );
+if ( !defined( "PODCAST_PARENT" ))  {
+	define( "PODCAST_PARENT", 27 );
 }
 if ( !defined( "PODCAST_MENU" ))  {
 	define( "PODCAST_MENU", "Podcast" );
