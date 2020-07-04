@@ -210,15 +210,18 @@ function get_top_parent_page_id() {
 }
 
 /**
- * Check if page is related to the passed parent page
+ * Check if page is related to the passed parent page or category
  * 
  * @param integer
  * @return boolean
  */
-function isRelated( $ancestorPageID ) {
+function isRelated( $ancestorPageID, $category ) {
+	if ( in_category($category) ) {
+		return true;
+	}
 	$pageID = get_the_ID();
 	$ancestorsArr = get_post_ancestors( $pageID );
-	if ($ancestorsArr ) {
+	if ( $ancestorsArr ) {
 		if ( in_array( $ancestorPageID, $ancestorsArr) ) {
 			return true;
 		}
@@ -236,11 +239,11 @@ function isRelated( $ancestorPageID ) {
   * @return string
   */
 function resolvePrimaryMenu() {
-	if ( isRelated(MUSIC_PARENT) ) {
+	if ( isRelated(MUSIC_PARENT, MUSIC_CATEGORY) ) {
 		return MUSIC_MENU;
-	} elseif ( isRelated(MARKETING_PARENT) ) {
+	} elseif ( isRelated(MARKETING_PARENT, MARKETING_CATEGORY) ) {
 		return MARKETING_MENU;
-	} elseif ( isRelated(PODCAST_PARENT) ) {
+	} elseif ( isRelated(PODCAST_PARENT, PODCAST_CATEGORY) ) {
 		return PODCAST_MENU;
 	} else {
 		return 'Primary';
