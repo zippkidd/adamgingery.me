@@ -44,6 +44,7 @@ body {
   --margin-width: 6vw;
   --stndrd-width: calc(100vw - (var(--margin-width) + var(--margin-width)));
   --cntnt-spacing: 4rem;
+  --playfair-display: 'Playfair Display', serif;
 }
 
 /*================= RESET STYLES: =================
@@ -117,7 +118,11 @@ input[type="submit"],
 
 /*================== FONT STYLES: =================
 ===================================================*/
-h1,
+h1 {
+  font-family: var(--playfair-display);
+  font-weight: 800;
+}
+
 h2,
 h3,
 h4,
