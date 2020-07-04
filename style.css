@@ -89,7 +89,7 @@ body.stop-scroll {
 }
 
 .align-center {
-  text-align: center !important;
+  /* text-align: center !important; .has-text-align-center*/
   margin-left: auto !important;
   margin-right: auto !important;
 }
