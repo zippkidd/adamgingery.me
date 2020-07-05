@@ -93,3 +93,16 @@ function chevron_landing_func( $atts ) {
 	return $html;
 }
 add_shortcode( 'chevron_landing', 'chevron_landing_func' );
+
+function trust_bar_func() {
+$html = <<<HTML
+<div class="trust-bar">
+	<img src="/wp-content/uploads/2020/07/benq-logo-new-bigger.png" alt="benq logo">
+	<img src="/wp-content/uploads/2020/07/enu-logo.svg" alt="enu-nutrition logo">
+	<img src="/wp-content/uploads/2020/07/logo-broadview-networks-vector.svg" alt="broadview networks logo">
+	<img src="/wp-content/uploads/2020/07/logo-cross-country-healthcare.png" alt="cross country healthcare logo">
+</div>
+HTML;
+return $html;
+}
+add_shortcode( 'trust_bar', 'trust_bar_func' );
