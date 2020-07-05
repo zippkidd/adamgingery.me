@@ -82,7 +82,7 @@ function chevron_jump_func( $atts ) {
 }
 add_shortcode( 'chevron_jump', 'chevron_jump_func' );
 
-function chevron_landing_func( $atts ) {
+function chevron_landing_func( $atts ) { // might not be necessary with the new HTML anchor feature for blocks?
 	$a = shortcode_atts( array(
 		'id' => 'no-anchor-selected'
 	), $atts);
