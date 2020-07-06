@@ -216,17 +216,17 @@ function get_top_parent_page_id() {
  * @param integer optional
  * @return boolean
  */
-function isRelated( $ancestorPageID, $category = null ) {
+function isRelated( $parentPageID, $category = null ) {
 	if ( !isBlog() && $category && in_category($category) ) {
-		return true;
+		return true; // post category is related to $category argument
 	}
-	$pageID = get_the_ID();
-	$ancestorsArr = get_post_ancestors( $pageID );
-	if ( $ancestorsArr && in_array( $ancestorPageID, $ancestorsArr) ) {
-		return true;
+	$currentPageID = get_the_ID();
+	$ancestorsArr = get_post_ancestors( $currentPageID );
+	if ( $ancestorsArr && in_array( $parentPageID, $ancestorsArr) ) {
+		return true; // parent page argument is an ancestor of current page
 	}
-	if ( $ancestorPageID === $pageID ) {
-		return true;
+	if ( $parentPageID === $currentPageID ) {
+		return true; // parent page argument is the current page
 	}
 	return false;
  }
