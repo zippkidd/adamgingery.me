@@ -217,7 +217,7 @@ function get_top_parent_page_id() {
  * @return boolean
  */
 function isRelated( $ancestorPageID, $category = null ) {
-	if ( $category && in_category($category) ) {
+	if ( !isBlog() && $category && in_category($category) ) {
 		return true;
 	}
 	$pageID = get_the_ID();
@@ -262,8 +262,10 @@ function resolvePrimaryMenu() {
 	} elseif ( isRelated(MARKETING_PARENT) ) {
 		return MARKETING_CATEGORY;
 	} elseif ( isRelated(PODCAST_EPISODE_PARENT) ) {
+		echo '<span class="test">isRelated to PODCAST_EPISODE_PARENT</span>';
 		return PODCAST_EPISODE_CATEGORY;
 	} elseif ( isRelated(PODCAST_ARTICLE_PARENT) ) {
+		echo '<span class="test">isRelated to PODCAST_ARTICLE_PARENT</span>';
 		return PODCAST_ARTICLE_CATEGORY;
 	}
 }
