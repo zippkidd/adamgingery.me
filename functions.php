@@ -213,10 +213,11 @@ function get_top_parent_page_id() {
  * Check if page is related to the passed parent page or category
  * 
  * @param integer
+ * @param integer optional
  * @return boolean
  */
-function isRelated( $ancestorPageID, $category ) {
-	if ( in_category($category) ) {
+function isRelated( $ancestorPageID, $category = null ) {
+	if ( $category && in_category($category) ) {
 		return true;
 	}
 	$pageID = get_the_ID();
@@ -233,7 +234,7 @@ function isRelated( $ancestorPageID, $category ) {
 	return false;
  }
 
- /**
+/**
   * Resolve which silo menu to display
   *
   * @return string
@@ -247,6 +248,21 @@ function resolvePrimaryMenu() {
 		return PODCAST_MENU;
 	} else {
 		return 'Primary';
+	}
+}
+
+/**
+  * Resolve which blog category to display based on silo
+  *
+  * @return string
+  */
+  function resolveBlogCat() {
+	if ( isRelated(MUSIC_PARENT) ) {
+		return MUSIC_CATEGORY;
+	} elseif ( isRelated(MARKETING_PARENT) ) {
+		return MARKETING_CATEGORY;
+	} elseif ( isRelated(PODCAST_PARENT) ) {
+		return PODCAST_CATEGORY;
 	}
 }
 //==
