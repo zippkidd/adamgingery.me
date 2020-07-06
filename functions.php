@@ -222,14 +222,11 @@ function isRelated( $ancestorPageID, $category = null ) {
 	}
 	$pageID = get_the_ID();
 	$ancestorsArr = get_post_ancestors( $pageID );
-	if ( $ancestorsArr ) {
-		if ( in_array( $ancestorPageID, $ancestorsArr) ) {
-			return true;
-		}
-	} else {
-		if ( $ancestorPageID === $pageID ) {
-			return true;
-		}
+	if ( $ancestorsArr && in_array( $ancestorPageID, $ancestorsArr) ) {
+		return true;
+	}
+	if ( $ancestorPageID === $pageID ) {
+		return true;
 	}
 	return false;
  }
@@ -262,10 +259,8 @@ function resolvePrimaryMenu() {
 	} elseif ( isRelated(MARKETING_PARENT) ) {
 		return MARKETING_CATEGORY;
 	} elseif ( isRelated(PODCAST_EPISODE_PARENT) ) {
-		echo '<span class="test">isRelated to PODCAST_EPISODE_PARENT</span>';
 		return PODCAST_EPISODE_CATEGORY;
 	} elseif ( isRelated(PODCAST_ARTICLE_PARENT) ) {
-		echo '<span class="test">isRelated to PODCAST_ARTICLE_PARENT</span>';
 		return PODCAST_ARTICLE_CATEGORY;
 	}
 }
