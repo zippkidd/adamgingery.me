@@ -400,12 +400,12 @@ if ( !defined( "PODCAST_ARTICLE_CATEGORY" ))  {
 	define( "PODCAST_ARTICLE_CATEGORY", 8 );
 }
 if ( !defined( "PODCAST_ARTICLE_PARENT" ))  {
-	define( "PODCAST_ARTICLE_PARENT", 27 );
+	define( "PODCAST_ARTICLE_PARENT", 213 );
 }
 if ( !defined( "PODCAST_EPISODE_CATEGORY" ))  {
 	define( "PODCAST_EPISODE_CATEGORY", 9 );
 }
 if ( !defined( "PODCAST_EPISODE_PARENT" ))  {
-	define( "PODCAST_EPISODE_PARENT", 27 );
+	define( "PODCAST_EPISODE_PARENT", 215 );
 }
 //==
