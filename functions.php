@@ -388,6 +388,12 @@ if ( !defined( "MARKETING_MENU" ))  {
 if ( !defined( "PODCAST_CATEGORY" ))  {
 	define( "PODCAST_CATEGORY", 7 );
 }
+if ( !defined( "PODCAST_ARTICLE_CATEGORY" ))  {
+	define( "PODCAST_ARTICLE_CATEGORY", 8 );
+}
+if ( !defined( "PODCAST_EPISODE_CATEGORY" ))  {
+	define( "PODCAST_EPISODE_CATEGORY", 9 );
+}
 if ( !defined( "PODCAST_PARENT" ))  {
 	define( "PODCAST_PARENT", 27 );
 }
