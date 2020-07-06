@@ -22,7 +22,6 @@ get_header( 'blog' ); ?>
 
 		<?php //astra_content_loop(); ?>
 
-		<!-- Let's build custom loop here... -->
 		<main id="main" class="site-main">
 			<div class="ast-row">
 				<?php
