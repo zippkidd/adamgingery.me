@@ -54,10 +54,16 @@ get_header(); ?>
 						$custom_query->the_post();
 
 						$thumb 		= '';
+
+						$width = 1080;
+						$height = 675;
+						$class_text = 'et_pb_post_main_image';
 						$title_text = get_the_title();
 						$alt_text    = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
-						$thumbnail  = get_thumbnail( $width, $height, $classtext, $alttext, $titletext, false, 'Blogimage' );
-						$thumb      = $thumbnail["thumb"];
+						// $thumbnail  = get_thumbnail( $width, $height, $class_text, $alt_text, $title_text, false, 'Blogimage' );
+						// $thumb      = $thumbnail["thumb"];
+
+						the_content();
 
 						// Loop output goes here
 					endwhile;
