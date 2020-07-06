@@ -385,19 +385,25 @@ if ( !defined( "MARKETING_MENU" ))  {
 }
 
 // Backstage Podcast
+if ( !defined( "PODCAST_MENU" ))  {
+	define( "PODCAST_MENU", "Podcast" );
+}
 if ( !defined( "PODCAST_MAIN_CATEGORY" ))  {
 	define( "PODCAST_MAIN_CATEGORY", 7 );
 }
 if ( !defined( "PODCAST_MAIN_PARENT" ))  {
 	define( "PODCAST_MAIN_PARENT", 27 );
 }
-if ( !defined( "PODCAST_MENU" ))  {
-	define( "PODCAST_MENU", "Podcast" );
-}
 if ( !defined( "PODCAST_ARTICLE_CATEGORY" ))  {
 	define( "PODCAST_ARTICLE_CATEGORY", 8 );
 }
+if ( !defined( "PODCAST_ARTICLE_PARENT" ))  {
+	define( "PODCAST_ARTICLE_PARENT", 27 );
+}
 if ( !defined( "PODCAST_EPISODE_CATEGORY" ))  {
 	define( "PODCAST_EPISODE_CATEGORY", 9 );
+}
+if ( !defined( "PODCAST_EPISODE_PARENT" ))  {
+	define( "PODCAST_EPISODE_PARENT", 27 );
 }
 //==
