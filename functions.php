@@ -261,8 +261,10 @@ function resolvePrimaryMenu() {
 		return MUSIC_CATEGORY;
 	} elseif ( isRelated(MARKETING_PARENT) ) {
 		return MARKETING_CATEGORY;
-	} elseif ( isRelated(PODCAST_MAIN_PARENT) ) {
-		return PODCAST_MAIN_CATEGORY;
+	} elseif ( isRelated(PODCAST_EPISODE_PARENT) ) {
+		return PODCAST_EPISODE_CATEGORY;
+	} elseif ( isRelated(PODCAST_ARTICLE_PARENT) ) {
+		return PODCAST_ARTICLE_CATEGORY;
 	}
 }
 //==
