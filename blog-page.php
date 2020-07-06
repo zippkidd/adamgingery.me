@@ -26,31 +26,67 @@ get_header(); ?>
 		<main id="main" class="site-main">
 			<div class="ast-row">
 				<?php
+				// truncate the_content() to 55 words
 				// Let's build custom wp_query here...
-				$args = array(
-					'cat' => $cat, //let's decide cat based on isRelated()
+
+				// Define custom query parameters
+				$custom_query_args = array(
+					'cat' 			 => resolveBlogCat(), // only main blog page shouldn't have category, so this should always return a category ID
+					'posts_per_page' => 6,
+					'paged'			 => $paged,
+					
 				);
-				// The Query
-				$the_query = new WP_Query( $args );
+
+				// Get current page and append to custom query parameters array
+				$custom_query_args['paged'] = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 				
-				// The Loop
-				if ( $the_query->have_posts() ) {
-					echo '<ul>';
-					while ( $the_query->have_posts() ) {
-						$the_query->the_post();
-						echo '<li>' . get_the_title() . '</li>';
-					}
-					echo '</ul>';
-				} else {
-					// no posts found
-				}
-				/* Restore original Post Data */
+				// Instantiate custom query
+				$custom_query = new WP_Query( $custom_query_args );
+				
+				// Pagination fix
+				$temp_query = $wp_query;
+				$wp_query   = NULL;
+				$wp_query   = $custom_query;
+				
+				// Output custom query loop
+				if ( $custom_query->have_posts() ) :
+					while ( $custom_query->have_posts() ) :
+						$custom_query->the_post();
+
+						$thumb 		= '';
+						$title_text = get_the_title();
+						$alt_text    = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
+						$thumbnail  = get_thumbnail( $width, $height, $classtext, $alttext, $titletext, false, 'Blogimage' );
+						$thumb      = $thumbnail["thumb"];
+
+						// Loop output goes here
+					endwhile;
+				else: ?>
+					<p><?php _e( 'Sorry, no posts have been added to this blog feed yet.' ); ?></p> 
+				<?php endif;
+				// Reset postdata
 				wp_reset_postdata();
+				
+				// Custom query loop pagination
+				// previous_posts_link( 'Older Posts' );
+				// next_posts_link( 'Newer Posts', $custom_query->max_num_pages );
+				
+				// Reset main query object
+				// $wp_query = NULL;
+				// $wp_query = $temp_query;
+
 				?>
-			</div>
+
+			</div> <!-- .ast-row -->
 		</main>
 
 		<?php astra_pagination(); ?>
+
+		<?php
+			// Reset main query object
+			$wp_query = NULL;
+			$wp_query = $temp_query;
+		?>
 
 		<?php astra_primary_content_bottom(); ?>
 
