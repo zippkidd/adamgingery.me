@@ -217,7 +217,7 @@ function get_top_parent_page_id() {
  * @return boolean
  */
 function isRelated( $parentPageID, $category = null ) {
-	if ( !isBlog() && $category && in_category($category) ) {
+	if ( is_single() && $category && in_category($category) ) {
 		return true; // post category is related to $category argument
 	}
 	$currentPageID = get_the_ID();
