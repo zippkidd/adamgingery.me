@@ -20,6 +20,8 @@ if (!defined('ABSPATH')) {
 <?php astra_head_bottom(); ?>
 </head>
 
+<body <?php astra_schema_body(); ?> <?php body_class('blog'); ?>>
+
 <?php
 function removeAstSinglePost( $classes ) {
     if ( isset( $classes['ast-single-post'] ) ) {
@@ -29,8 +31,6 @@ function removeAstSinglePost( $classes ) {
 }
 add_filter( 'body_class', 'removeAstSinglePost' );
 ?>
-
-<body <?php astra_schema_body(); ?> <?php body_class('blog'); ?>>
 
 <?php astra_body_top(); ?>
 <?php wp_body_open(); ?>
