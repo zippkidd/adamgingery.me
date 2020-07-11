@@ -23,16 +23,14 @@ if (!defined('ABSPATH')) {
 <body <?php astra_schema_body(); ?> <?php body_class('blog'); ?>>
 
 <?php
-function removeAstSinglePost( $classes ) {
-    echo '<h1 class="test">';
-    var_dump($classes);
-    echo '</h1>';
-    if ( isset( $classes['ast-single-post'] ) ) {
-        unset( $classes['ast-single-post'] );
-    }
-    return $classes;
-}
-add_filter( 'body_class', 'removeAstSinglePost' );
+// function removeAstSinglePost( $classes ) {
+//     console_log(var_dump($classes));
+//     if ( isset( $classes['ast-single-post'] ) ) {
+//         unset( $classes['ast-single-post'] );
+//     }
+//     return $classes;
+// }
+// add_filter( 'body_class', 'removeAstSinglePost' );
 ?>
 
 <?php astra_body_top(); ?>

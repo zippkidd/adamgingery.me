@@ -458,3 +458,11 @@ function console_log($output, $with_script_tags = true) {
     }
     echo $js_code;
 }
+
+function removeAstSinglePost( $classes ) {
+    if ( isset( $classes['ast-single-post'] ) ) {
+        unset( $classes['ast-single-post'] );
+	}
+    return $classes;
+}
+add_filter( 'body_class', 'removeAstSinglePost' );
