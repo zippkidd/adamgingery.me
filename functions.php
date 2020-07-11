@@ -195,16 +195,16 @@ function astra_schema_body() {
 }
 
 // Remove ast-single-post for blog-page.php
-function removeAstSinglePost( $classes ) {
-    if ( isset( $classes['ast-single-post'] ) ) {
-        unset( $classes['ast-single-post'] );
-    }
-    return $classes;
-}
+// function removeAstSinglePost( $classes ) {
+//     if ( isset( $classes['ast-single-post'] ) ) {
+//         unset( $classes['ast-single-post'] );
+//     }
+//     return $classes;
+// }
 
-if ( is_page_template('blog-page.php') ) {
-	add_filter( 'body_class', 'removeAstSinglePost' );
-}
+// if ( is_page_template('blog-page.php') ) {
+// 	add_filter( 'body_class', 'removeAstSinglePost' );
+// }
 //==
 
 //== Remove Default Astra theme font (astra.woff)
