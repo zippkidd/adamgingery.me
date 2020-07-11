@@ -24,6 +24,9 @@ if (!defined('ABSPATH')) {
 
 <?php
 function removeAstSinglePost( $classes ) {
+    echo '<h1 class="test">';
+    var_dump($classes);
+    echo '</h1>';
     if ( isset( $classes['ast-single-post'] ) ) {
         unset( $classes['ast-single-post'] );
     }
