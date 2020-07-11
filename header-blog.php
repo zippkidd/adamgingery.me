@@ -20,6 +20,16 @@ if (!defined('ABSPATH')) {
 <?php astra_head_bottom(); ?>
 </head>
 
+<?php
+// Removes a class from the body_class array.
+add_filter( 'body_class', function( $classes ) {
+    if ( isset( $classes['ast-single-post'] ) ) {
+        unset( $classes['ast-single-post'] );
+    }
+    return $classes;
+} );
+?>
+
 <body <?php astra_schema_body(); ?> <?php body_class('blog'); ?>>
 
 <?php astra_body_top(); ?>
