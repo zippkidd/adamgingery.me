@@ -20,6 +20,16 @@ if (!defined('ABSPATH')) {
 <?php astra_head_bottom(); ?>
 </head>
 
+<?php
+function removeAstSinglePost( $classes ) {
+    if ( isset( $classes['ast-single-post'] ) ) {
+        unset( $classes['ast-single-post'] );
+    }
+    return $classes;
+}
+add_filter( 'body_class', 'removeAstSinglePost' );
+?>
+
 <body <?php astra_schema_body(); ?> <?php body_class('blog'); ?>>
 
 <?php astra_body_top(); ?>
