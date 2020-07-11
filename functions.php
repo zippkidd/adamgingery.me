@@ -460,9 +460,16 @@ function console_log($output, $with_script_tags = true) {
 }
 
 function removeAstSinglePost( $classes ) {
+	print_r($classes);
+	echo '<br>';
     if ( isset( $classes['ast-single-post'] ) ) {
+		echo '<br>';
+		print_r('true');
+		echo '<br>';
         unset( $classes['ast-single-post'] );
 	}
+	echo '<br>';
+	print_r($classes);
     return $classes;
 }
 add_filter( 'body_class', 'removeAstSinglePost' );
