@@ -20,6 +20,13 @@ if (!defined('ABSPATH')) {
 <?php astra_head_bottom(); ?>
 </head>
 
+<?php
+add_filter( 'body_class', function ($classes) {
+	unset( $classes[array_search('ast-single-post', $classes)] );
+    return $classes;
+} );
+?>
+
 <body <?php astra_schema_body(); ?> <?php body_class('blog'); ?>>
 
 <?php

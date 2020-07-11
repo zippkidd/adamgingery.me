@@ -449,27 +449,3 @@ if ( !defined( "PODCAST_EPISODE_PARENT" ))  {
 	define( "PODCAST_EPISODE_PARENT", 215 );
 }
 //==
-
-function console_log($output, $with_script_tags = true) {
-    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
-');';
-    if ($with_script_tags) {
-        $js_code = '<script>' . $js_code . '</script>';
-    }
-    echo $js_code;
-}
-
-function removeAstSinglePost( $classes ) {
-	print_r($classes);
-	echo '<br>';
-    if ( isset( $classes['ast-single-post'] ) ) {
-		echo '<br>';
-		print_r('true');
-		echo '<br>';
-        unset( $classes['ast-single-post'] );
-	}
-	echo '<br>';
-	print_r($classes);
-    return $classes;
-}
-add_filter( 'body_class', 'removeAstSinglePost' );
