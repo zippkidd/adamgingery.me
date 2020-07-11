@@ -164,6 +164,7 @@ function astra_primary_navigation_markup() {
 add_action( 'astra_masthead_content', 'astra_primary_navigation_markup', 10 );
 
 
+// Make sure blog-page.php get's 'Blog' schema type
 /**
  * Adds schema tags to the body classes.
  *
@@ -192,6 +193,10 @@ function astra_schema_body() {
 	// Return our HTML.
 	echo apply_filters( 'astra_schema_body', "itemtype='https://schema.org/" . esc_attr( $result ) . "' itemscope='itemscope'" ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 }
+
+// Remove ast-single-post
+// add_filter( 'body_class', 'remove_ast_single_post' );
+
 //==
 
 //== Remove Default Astra theme font (astra.woff)
