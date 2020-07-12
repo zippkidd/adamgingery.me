@@ -29,17 +29,6 @@ add_filter( 'body_class', function ($classes) {
 
 <body <?php astra_schema_body(); ?> <?php body_class('blog'); ?>>
 
-<?php
-// function removeAstSinglePost( $classes ) {
-//     console_log(var_dump($classes));
-//     if ( isset( $classes['ast-single-post'] ) ) {
-//         unset( $classes['ast-single-post'] );
-//     }
-//     return $classes;
-// }
-// add_filter( 'body_class', 'removeAstSinglePost' );
-?>
-
 <?php astra_body_top(); ?>
 <?php wp_body_open(); ?>
 <div 
