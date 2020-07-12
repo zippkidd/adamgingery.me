@@ -162,6 +162,49 @@ function astra_primary_navigation_markup() {
 }
 
 add_action( 'astra_masthead_content', 'astra_primary_navigation_markup', 10 );
+
+
+// Make sure blog-page.php get's 'Blog' schema type
+/**
+ * Adds schema tags to the body classes.
+ *
+ * @since 1.0.0
+ */
+function astra_schema_body() {
+
+	if ( true !== apply_filters( 'astra_schema_enabled', true ) ) {
+		return;
+	}
+
+	// Check conditions.
+	$is_blog = ( is_home() || is_archive() || is_attachment() || is_tax() || is_single() || is_page_template('blog-page.php') ) ? true : false;
+
+	// Set up default itemtype.
+	$itemtype = 'WebPage';
+
+	// Get itemtype for the blog.
+	$itemtype = ( $is_blog ) ? 'Blog' : $itemtype;
+
+	// Get itemtype for search results.
+	$itemtype = ( is_search() ) ? 'SearchResultsPage' : $itemtype;
+	// Get the result.
+	$result = apply_filters( 'astra_schema_body_itemtype', $itemtype );
+
+	// Return our HTML.
+	echo apply_filters( 'astra_schema_body', "itemtype='https://schema.org/" . esc_attr( $result ) . "' itemscope='itemscope'" ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+}
+
+// Remove ast-single-post for blog-page.php
+// function removeAstSinglePost( $classes ) {
+//     if ( isset( $classes['ast-single-post'] ) ) {
+//         unset( $classes['ast-single-post'] );
+//     }
+//     return $classes;
+// }
+
+// if ( is_page_template('blog-page.php') ) {
+// 	add_filter( 'body_class', 'removeAstSinglePost' );
+// }
 //==
 
 //== Remove Default Astra theme font (astra.woff)
@@ -213,27 +256,25 @@ function get_top_parent_page_id() {
  * Check if page is related to the passed parent page or category
  * 
  * @param integer
+ * @param integer optional
  * @return boolean
  */
-function isRelated( $ancestorPageID, $category ) {
-	if ( in_category($category) ) {
-		return true;
+function isRelated( $parentPageID, $category = null ) {
+	if ( is_single() && $category && in_category($category) ) {
+		return true; // post category is related to $category argument
 	}
-	$pageID = get_the_ID();
-	$ancestorsArr = get_post_ancestors( $pageID );
-	if ( $ancestorsArr ) {
-		if ( in_array( $ancestorPageID, $ancestorsArr) ) {
-			return true;
-		}
-	} else {
-		if ( $ancestorPageID === $pageID ) {
-			return true;
-		}
+	$currentPageID = get_the_ID();
+	$ancestorsArr = get_post_ancestors( $currentPageID );
+	if ( $ancestorsArr && in_array( $parentPageID, $ancestorsArr) ) {
+		return true; // parent page argument is an ancestor of current page
+	}
+	if ( $parentPageID === $currentPageID ) {
+		return true; // parent page argument is the current page
 	}
 	return false;
  }
 
- /**
+/**
   * Resolve which silo menu to display
   *
   * @return string
@@ -243,10 +284,27 @@ function resolvePrimaryMenu() {
 		return MUSIC_MENU;
 	} elseif ( isRelated(MARKETING_PARENT, MARKETING_CATEGORY) ) {
 		return MARKETING_MENU;
-	} elseif ( isRelated(PODCAST_PARENT, PODCAST_CATEGORY) ) {
+	} elseif ( isRelated(PODCAST_MAIN_PARENT, PODCAST_MAIN_CATEGORY) ) {
 		return PODCAST_MENU;
 	} else {
 		return 'Primary';
+	}
+}
+
+/**
+  * Resolve which blog category to display based on silo
+  *
+  * @return string
+  */
+  function resolveBlogCat() {
+	if ( isRelated(MUSIC_PARENT) ) {
+		return MUSIC_CATEGORY;
+	} elseif ( isRelated(MARKETING_PARENT) ) {
+		return MARKETING_CATEGORY;
+	} elseif ( isRelated(PODCAST_EPISODE_PARENT) ) {
+		return PODCAST_EPISODE_CATEGORY;
+	} elseif ( isRelated(PODCAST_ARTICLE_PARENT) ) {
+		return PODCAST_ARTICLE_CATEGORY;
 	}
 }
 //==
@@ -369,13 +427,25 @@ if ( !defined( "MARKETING_MENU" ))  {
 }
 
 // Backstage Podcast
-if ( !defined( "PODCAST_CATEGORY" ))  {
-	define( "PODCAST_CATEGORY", 7 );
-}
-if ( !defined( "PODCAST_PARENT" ))  {
-	define( "PODCAST_PARENT", 27 );
-}
 if ( !defined( "PODCAST_MENU" ))  {
 	define( "PODCAST_MENU", "Podcast" );
+}
+if ( !defined( "PODCAST_MAIN_CATEGORY" ))  {
+	define( "PODCAST_MAIN_CATEGORY", 7 );
+}
+if ( !defined( "PODCAST_MAIN_PARENT" ))  {
+	define( "PODCAST_MAIN_PARENT", 27 );
+}
+if ( !defined( "PODCAST_ARTICLE_CATEGORY" ))  {
+	define( "PODCAST_ARTICLE_CATEGORY", 8 );
+}
+if ( !defined( "PODCAST_ARTICLE_PARENT" ))  {
+	define( "PODCAST_ARTICLE_PARENT", 213 );
+}
+if ( !defined( "PODCAST_EPISODE_CATEGORY" ))  {
+	define( "PODCAST_EPISODE_CATEGORY", 9 );
+}
+if ( !defined( "PODCAST_EPISODE_PARENT" ))  {
+	define( "PODCAST_EPISODE_PARENT", 215 );
 }
 //==

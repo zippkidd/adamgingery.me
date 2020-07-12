@@ -3,6 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+// Formsubmit.co Contact Form
 function contact_form_func() {
 	wp_enqueue_script('validate_lib');
 	wp_enqueue_script('contact_form');
@@ -39,6 +40,7 @@ HTML;
 }
 add_shortcode( 'contact_form', 'contact_form_func' );
 
+// Siema Carousel
 function carousel_func() {
 	wp_enqueue_script('carousel_library');
 	wp_enqueue_script('carousel');
@@ -70,6 +72,7 @@ HTML;
 }
 add_shortcode( 'carousel', 'carousel_func' );
 
+// Chevron -- Jump From
 function chevron_jump_func( $atts ) {
 	$a = shortcode_atts( array(
 		'to' => 'no-anchor-selected'
@@ -82,6 +85,7 @@ function chevron_jump_func( $atts ) {
 }
 add_shortcode( 'chevron_jump', 'chevron_jump_func' );
 
+// Chevron -- Landing
 function chevron_landing_func( $atts ) { // might not be necessary with the new HTML anchor feature for blocks?
 	$a = shortcode_atts( array(
 		'id' => 'no-anchor-selected'
@@ -93,6 +97,14 @@ function chevron_landing_func( $atts ) { // might not be necessary with the new 
 	return $html;
 }
 add_shortcode( 'chevron_landing', 'chevron_landing_func' );
+
+
+// Add Shortcode Functionality for Menus
+function print_menu_shortcode($atts, $content = null) {
+	extract(shortcode_atts(array( 'id' => null, 'class' => null, 'name' => null, ), $atts));
+	return wp_nav_menu( array( 'menu_id' => $id, 'menu_class' => $class, 'menu' => $name, 'echo' => false ) );
+}
+add_shortcode('menu', 'print_menu_shortcode');  // add using this shortcode [menu id="custom-id" name="Menu Name"]
 
 function trust_bar_func() {
 $html = <<<HTML
@@ -106,3 +118,4 @@ HTML;
 return $html;
 }
 add_shortcode( 'trust_bar', 'trust_bar_func' );
+
