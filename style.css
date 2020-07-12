@@ -27,12 +27,13 @@
 
 /*============= GLOBAL LAYOUT STYLES: ===============
 =====================================================*/
-html,
-body {
-  -moz-osx-font-smoothing: grayscale;
+/* html,
+body { */
+  /* -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-}
+  font-smoothing: antialiased; */
+  /* Dont' use font-smoothing https://responsivedesign.is/articles/font-smoothing/ */
+/* } */
 
 html {
   font-size: 62.5%; /* font-size 1rem = 10px on default browser settings */
