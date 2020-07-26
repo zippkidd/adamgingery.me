@@ -18,11 +18,11 @@ function lpc_enqueue_styles() {
     array( 'parent-style' ),
     wp_get_theme()->get('Version')
   );
-  wp_enqueue_style( 'normalize-style',
-    get_stylesheet_directory_uri() . '/normalize.css',
-    array( 'child-style' ),
-    wp_get_theme()->get('Version')
-  );
+//   wp_enqueue_style( 'normalize-style',
+//     get_stylesheet_directory_uri() . '/normalize.css',
+//     array( 'child-style' ),
+//     wp_get_theme()->get('Version')
+//   );
 }
 //==
 
