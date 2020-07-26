@@ -27,12 +27,13 @@
 
 /*============= GLOBAL LAYOUT STYLES: ===============
 =====================================================*/
-html,
-body {
-  -moz-osx-font-smoothing: grayscale;
+/* html,
+body { */
+  /* -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-}
+  font-smoothing: antialiased; */
+  /* Dont' use font-smoothing https://responsivedesign.is/articles/font-smoothing/ */
+/* } */
 
 html {
   font-size: 62.5%; /* font-size 1rem = 10px on default browser settings */
@@ -89,7 +90,7 @@ body.stop-scroll {
 }
 
 .align-center {
-  text-align: center !important;
+  /* text-align: center !important; .has-text-align-center*/
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -287,7 +288,7 @@ address {
 @media only screen and (min-width: 400px) {}
 
 /*------------------- [min 451px] ------------------*/
-@media only screen and (min-width: 451px) 
+@media only screen and (min-width: 451px) {}
 
 /*------------------- [max 640px] ------------------*/
 @media only screen and (max-width: 640px) {}
