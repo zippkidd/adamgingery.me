@@ -16,8 +16,12 @@
 /*=================== VARIABLES: ===================
 ===================================================*/
 :root {
-  --black: #000000;
+  --jetblack: #333;
   --white: #ffffff;
+  --unblue: #648DE5;
+  --gunmetal: #022F40;
+  --celadongreen: #048A81;
+  --charcoal: #424651;
   --margin-width: 6vw;
   --stndrd-width: calc(100vw - (var(--margin-width) + var(--margin-width)));
   --cntnt-spacing: 4rem;
@@ -81,10 +85,6 @@ body.stop-scroll {
   padding: 0 !important;
 }
 
-.banner {
-  padding: 10rem 0 7.5rem;
-}
-
 .cntnt-sctn {
   padding: var(--cntnt-spacing) 0 !important;
 }
@@ -113,15 +113,25 @@ input[type="submit"],
   color: var(--black) !important;
 }
 
+.jetblack {
+  color: var(--jetblack)!important;
+}
+
 .white {
   color: var(--white) !important;
 }
 
 /*================== FONT STYLES: =================
 ===================================================*/
-h1 {
-  font-family: var(--playfair-display);
-  font-weight: 800;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 1em;
 }
 
 h2,
@@ -130,31 +140,25 @@ h4,
 h5,
 h6 {
   font-family: var(--montserrat);
-  color: var(--black);
-  line-height: 1.2;
-  text-align: left;
-  padding-bottom: 3rem;
   font-weight: 600;
 }
 
 h1 {
   font-size: 3rem;
-  text-align: center;
+  font-family: var(--playfair-display);
+  font-weight: 900;
 }
 
 .h1 {
   font-size: 3rem !important;
-  text-align: center !important;
 }
 
 h2 {
   font-size: 2.6rem;
-  text-align: center;
 }
 
 .h2 {
   font-size: 2.6rem !important;
-  text-align: center;
 }
 
 h3 {
@@ -167,12 +171,10 @@ h3 {
 
 h4 {
   font-size: 1.8rem;
-  font-weight: 400;
 }
 
 .h4 {
   font-size: 1.8rem !important;
-  font-weight: 400 !important;
 }
 
 p,
@@ -183,7 +185,7 @@ textarea,
 button {
   font-family: var(--montserrat);
   font-weight: 300;
-  color: var(--black);
+  color: var(--jetblack);
 }
 
 p {
@@ -248,6 +250,18 @@ address {
 
 /*=============== SHORTCODES STYLES: =================
 =====================================================*/
+
+/*================= BANNER STYLES: ==================
+=====================================================*/
+.banner {
+  padding: 10rem 0 7.5rem;
+}
+
+.banner .wp-block-group__inner-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
 
 
 /*================= FORM STYLES: ==================
