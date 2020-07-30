@@ -239,9 +239,9 @@
 :root {
   --black: #000;
   --white: #fff;
+  --jetblack: #333;
 
   /* Color Pallette https://coolors.co/004e64-00a5cf-9fffcb-25a18e-7ae582 */
-  --jetblack: #333;
   --midnighteagle: #004E64;
   --cerulean: #00A5CF
   --aquamarine: #9FFFCB;
@@ -493,7 +493,10 @@ address {
 
 /*================ HEADER STYLES: ================
 ==================================================*/
-
+.main-header-menu > .menu-item > a {
+  color: var(--white);
+  text-transform: uppercase;
+}
 
 /*=============== SHORTCODES STYLES: =================
 =====================================================*/
@@ -502,7 +505,7 @@ address {
 =====================================================*/
 .banner {
   /* padding: 10rem 0 7.5rem; */
-  background-color: var(--unblue);
+  background-color: var(--midnighteagle);
 }
 
 .banner .wp-block-group__inner-container {
@@ -528,6 +531,16 @@ address {
 .banner__headshot {
   padding: 8rem 0 0;
   background-color: var(--white);
+  position: relative;
+}
+
+.banner__headshot::before {
+  content: url(/wp-content/uploads/2020/07/swoop-better.svg);
+  position: absolute;
+  top: -.6rem;
+  left: -0.25rem;
+  bottom: 0;
+  width: 39.5rem;
 }
 
 .banner__headshot .wp-block-image {
