@@ -228,6 +228,22 @@ add_theme_support( 'editor-color-palette', array(
 		'slug'  => 'copper-red',
 		'color' => '#c06e52',
 	),
+
+	array(
+		'name'  => __( 'Black', 'astraChild' ),
+		'slug'  => 'black',
+		'color' => '#000',
+	),
+	array(
+		'name'  => __( 'Jet Black', 'astraChild' ),
+		'slug'  => 'jet-black',
+		'color' => '#333',
+	),
+	array(
+		'name'  => __( 'White', 'astraChild' ),
+		'slug'  => 'white',
+		'color' => '#fff',
+	),
 	// array(
 	// 	'name'  => __( 'Dark gray', '' ),
 	// 	'slug'  => 'dark-gray',
