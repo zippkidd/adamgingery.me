@@ -347,6 +347,10 @@ input[type="submit"],
   color: var(--white) !important;
 }
 
+.bg--white {
+  background-color: var(--white)!important;
+}
+
 /*================== FONT STYLES: =================
 ===================================================*/
 h1,
