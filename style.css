@@ -555,7 +555,7 @@ address {
   font-size: 10rem;
 }
 
-.banner img {
+.banner .wp-block-column:last-of-type {
   padding: 8rem 0 0;
   /* background-color: var(--white); */
   position: relative;
@@ -565,7 +565,7 @@ address {
   content: url(/wp-content/uploads/2020/08/swoop-better-persiangreen.svg);
   position: absolute;
   top: -.6rem;
-  left: -0.25rem;
+  /* left: -0.25rem; */
   bottom: 0;
   width: 39.5rem;
 }
