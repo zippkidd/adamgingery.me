@@ -579,7 +579,7 @@ address {
   margin-bottom: 0;
 }
 
-.banner .wp-block-column:last-of-type::before {
+.home .banner .wp-block-column:last-of-type::before {
   content: url(/wp-content/uploads/2020/08/swoop-better-persiangreen.svg);
   position: absolute;
   top: -.6rem;
