@@ -319,7 +319,7 @@ body.stop-scroll {
   padding: var(--cntnt-spacing) 0 !important;
 }
 
-.align-center {
+.mx-auto {
   /* text-align: center !important; .has-text-align-center*/
   margin-left: auto !important;
   margin-right: auto !important;
