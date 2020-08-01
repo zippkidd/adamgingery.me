@@ -535,6 +535,87 @@ address {
 
 /*=============== SHORTCODES STYLES: =================
 =====================================================*/
+/* Contact Form */
+.contactForm input {
+	display: block;
+	width: 100%;
+}
+
+.contactForm #contactSubmit {
+	margin-top: 1.8rem;
+	/* background-color: var(--copperred); */
+	/* border: 2px solid #fff; */
+	/* -webkit-transition: all .15s ease-in;
+	-o-transition: all .15s ease-in;
+	transition: all .15s ease-in; */
+	font-size: 1.8rem;
+}
+
+/* .contactForm #contactSubmit:hover {
+	background-color: #000;
+} */
+
+.contactForm input[name="_honey"],
+.contactForm	.error {
+	display: none;
+}
+
+.contactForm .blurred.show-error input,
+.contactForm .blurred.show-error textarea {
+	background-color: #f5a1a1;
+}
+
+.contactForm .blurred.show-error .error {
+	color: #d22;
+	display: inline;
+	float: right;
+}
+
+.home .contactForm .blurred.show-error .error,
+.contact-page .contactForm .blurred.show-error .error {
+	color: #f5a1a1;
+}
+
+/* Carousel */
+.carouselWrapper {
+	position: relative;
+}
+
+.carouselWrapper .next,
+.carouselWrapper .prev {
+	-webkit-transition: border-color .15s ease-in;
+	-o-transition: border-color .15s ease-in;
+	transition: border-color .15s ease-in;
+	cursor: pointer;
+	position: absolute;
+	display: inline-block;
+	border-style: solid;
+	border-color: var(--copperred);
+	border-width: 5px 5px 0 0;
+	height: 35px;
+	width: 35px;
+	top: 50%;
+	z-index: 1;
+}
+
+.carouselWrapper .next {
+	right: 0;
+	-webkit-transform: translateY(-50%) rotate(45deg);
+	    -ms-transform: translateY(-50%) rotate(45deg);
+	        transform: translateY(-50%) rotate(45deg);
+}
+
+.carouselWrapper .prev {
+	left: 0;
+	-webkit-transform: translateY(-50%) rotate(-135deg);
+	    -ms-transform: translateY(-50%) rotate(-135deg);
+	        transform: translateY(-50%) rotate(-135deg);
+}
+
+.carouselWrapper .next:hover,
+.carouselWrapper .prev:hover {
+	border-color: #757575;
+}
 
 /*================= BANNER STYLES: ==================
 =====================================================*/
@@ -554,10 +635,7 @@ address {
 }
 
 .banner .wp-block-column:first-of-type {
-  padding-left: calc((100vw - 1280px) / 2);
-  /* background-color: var(--unblue); */
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 7rem calc((100vw - 1240px) / 6);
 }
 
 .banner h1,
@@ -570,10 +648,20 @@ address {
   line-height: 1!important;
 }
 
+.banner .wp-block-column:last-of-type {
+  /* margin-right: calc((100vw - 1280px) / 2); */
+  margin: 0;
+}
+
+.banner img {
+  /* padding-right: calc((100vw - 1280px) / 2); */
+}
+
 .home .banner .wp-block-column:last-of-type {
   padding: 8rem 0 0;
   /* background-color: var(--white); */
   position: relative;
+  padding-right: 0;
 }
 
 .banner .wp-block-image {

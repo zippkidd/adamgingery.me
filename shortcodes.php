@@ -8,7 +8,7 @@ function contact_form_func() {
 	wp_enqueue_script('validate_lib');
 	wp_enqueue_script('contact_form');
 $html = <<<HTML
-<form class="contactForm" action="https://formsubmit.co/CHANGEME" method="POST" novalidate>
+<form class="contactForm" action="https://formsubmit.co/thomastylek@gmail.com" method="POST" novalidate>
 	<label for="name">
 		Name
 		<span class="name error">Name is required.</span>
@@ -32,7 +32,7 @@ $html = <<<HTML
 	<input type="text" name="_honey">
 	<input type="hidden" name="_captcha" value="false">
 	<input type="hidden" name="action" value="contactform_action" />
-	<input type="submit" value="Submit" id="contactSubmit" />
+	<input type="submit" value="Submit" class="has-copper-red-background-color" id="contactSubmit" />
 </form>
 <div class="responseMsg"></div>
 HTML;
@@ -51,16 +51,19 @@ $html = <<<HTML
 		<div>
 			<figure class="txt-center">
 				<!-- Slide Content Here -->
+				<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale.jpg" alt="">
 			</figure>
 		</div>
 		<div>
 			<figure class="txt-center">
 				<!-- Slide Content Here -->
+				<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale.jpg" alt="">
 			</figure>
 		</div>
 		<div>
 			<figure class="txt-center">
 				<!-- Slide Content Here -->
+				<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale.jpg" alt="">
 			</figure>
 		</div>
 	</div>
