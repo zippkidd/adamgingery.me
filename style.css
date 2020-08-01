@@ -505,7 +505,7 @@ address {
 =====================================================*/
 .banner {
   /* padding: 10rem 0 7.5rem; */
-  background-color: #023618;
+  /* background-color: #023618; */
 }
 
 .banner .wp-block-group__inner-container {
@@ -530,7 +530,7 @@ address {
 
 .banner__headshot {
   padding: 8rem 0 0;
-  background-color: var(--white);
+  /* background-color: var(--white); */
   position: relative;
 }
 
