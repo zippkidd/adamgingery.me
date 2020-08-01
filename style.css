@@ -250,7 +250,7 @@
 
   /* Color Palette  https://coolors.co/6cc551-9ffcdf-386150-43281c-c06e52 */
   --huntergreen: #386150;
-  --copperred: #C06E52
+  --copperred: #C06E52;
 
   --margin-width: 6vw;
   --stndrd-width: calc(100vw - (var(--margin-width) + var(--margin-width)));
