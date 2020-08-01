@@ -217,7 +217,6 @@ add_theme_support( 'editor-color-palette', array(
 		'name'  => __( 'Hunter Green', 'astraChild' ),
 		'slug'  => 'hunter-green',
 		'color'	=> '#386150',
-		'background-color'	=> '#386150',
 	),
 	array(
 		'name'	=> __( 'Mantis Green', 'astraChild' ),
