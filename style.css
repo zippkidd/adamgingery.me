@@ -340,38 +340,38 @@ input[type="submit"],
 
 /*----------- Colors: -----------*/
 .has-black-color {
-  color: var(--black);
+  color: var(--black)!important;
 }
 .has-black-background-color {
-  background-color: var(--black);
+  background-color: var(--black)!important;
 }
 
 .has-jetblack-color {
-  color: var(--jetblack);
+  color: var(--jetblack)!important;
 }
 .has-jetblack-background-color {
-  background-color: var(--jetblack);
+  background-color: var(--jetblack)!important;
 }
 
 .has-white-color {
-  color: var(--white);
+  color: var(--white)!important;
 }
 .has-white-background-color {
-  background-color: var(--white);
+  background-color: var(--white)!important;
 }
 
 .has-hunter-green-color {
-  color: var(--huntergreen);
+  color: var(--huntergreen)!important;
 }
 .has-hunter-green-background-color {
-  background-color: var(--huntergreen);
+  background-color: var(--huntergreen)!important;
 }
 
 .has-copper-red-color {
-  color: var(--huntergreen);
+  color: var(--copperred)!important;
 }
 .has-copper-red-background-color {
-  background-color: var(--huntergreen);
+  background-color: var(--copperred)!important;
 }
 
 /*================== FONT STYLES: =================
