@@ -211,6 +211,32 @@ function astra_schema_body() {
 // add_filter( 'astra_enable_default_fonts', '__return_false' );
 //==
 
+//== Add support for editor color palette.
+add_theme_support( 'editor-color-palette', array(
+	array(
+		'name'  => __( 'Hunter Green', 'astraChild' ),
+		'slug'  => 'hunter-green',
+		'color'	=> '#386150',
+	),
+	array(
+		'name'	=> __( 'Mantis Green', 'astraChild' ),
+		'slug'	=> 'mantis-green',
+		'color'	=> '#c06e52';
+
+	),
+	array(
+		'name'  => __( 'Copper Red', 'astraChild' ),
+		'slug'  => 'copper-red',
+		'color' => '#c06e52',
+	),
+	// array(
+	// 	'name'  => __( 'Dark gray', '' ),
+	// 	'slug'  => 'dark-gray',
+	// 	'color' => '#333',
+	// ),
+) );
+//==
+
 //== Functions
 /**
  * Check if page is being loaded from mobile device, based on network headers
