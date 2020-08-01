@@ -556,6 +556,8 @@ address {
 .banner .wp-block-column:first-of-type {
   padding-left: calc((100vw - 1280px) / 2);
   /* background-color: var(--unblue); */
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .banner h1,
