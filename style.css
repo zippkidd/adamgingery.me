@@ -505,7 +505,7 @@ address {
 =====================================================*/
 .banner {
   /* padding: 10rem 0 7.5rem; */
-  background-color: var(--midnighteagle);
+  background-color: #023618;
 }
 
 .banner .wp-block-group__inner-container {
@@ -535,7 +535,7 @@ address {
 }
 
 .banner__headshot::before {
-  content: url(/wp-content/uploads/2020/07/swoop-better.svg);
+  content: url(/wp-content/uploads/2020/08/swoop-better-persiangreen.svg);
   position: absolute;
   top: -.6rem;
   left: -0.25rem;
