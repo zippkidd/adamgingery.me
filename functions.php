@@ -221,7 +221,7 @@ add_theme_support( 'editor-color-palette', array(
 	array(
 		'name'	=> __( 'Mantis Green', 'astraChild' ),
 		'slug'	=> 'mantis-green',
-		'color'	=> '#c06e52',
+		'color'	=> '#6CC551',
 	),
 	array(
 		'name'  => __( 'Copper Red', 'astraChild' ),
