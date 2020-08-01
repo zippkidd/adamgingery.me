@@ -567,6 +567,7 @@ address {
 
 .banner h1 {
   font-size: 10rem;
+  line-height: 1!important;
 }
 
 .banner .wp-block-column:last-of-type {
