@@ -570,7 +570,7 @@ address {
   line-height: 1!important;
 }
 
-.banner .wp-block-column:last-of-type {
+.home .banner .wp-block-column:last-of-type {
   padding: 8rem 0 0;
   /* background-color: var(--white); */
   position: relative;
