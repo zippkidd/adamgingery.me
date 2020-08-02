@@ -253,7 +253,10 @@
 
   /* Color Palette  https://coolors.co/6cc551-9ffcdf-386150-43281c-c06e52 */
   --huntergreen: #386150;
-  --copperred: #C06E52;
+  /* --copperred: #C06E52;
+  --darkcopperred: #AD5639; */
+  --lightcopperred: #C06E52;
+  --copperred: #AD5639;
   --darkcopperred: #AD5639;
   --bistre: #43281c;
 
@@ -335,7 +338,7 @@ body.stop-scroll {
   left: calc(50% - 2rem);
   width: 2rem;
   height: 2rem;
-  background: var(--darkcopperred);
+  background: var(--copperred);
   border-radius: 50%;
   border: .1rem solid var(--salamanderblack);
 }

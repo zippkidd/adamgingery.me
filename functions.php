@@ -226,7 +226,7 @@ add_theme_support( 'editor-color-palette', array(
 	array(
 		'name'  => __( 'Copper Red', 'astraChild' ),
 		'slug'  => 'copper-red',
-		'color' => '#c06e52',
+		'color' => '#AD5639',
 	),
 	array(
 		'name'  => __( 'Indigo', 'astraChild' ),
