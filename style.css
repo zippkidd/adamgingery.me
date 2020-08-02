@@ -658,7 +658,7 @@ address {
 }
 
 .banner--noimage {
-  padding: 11rem calc((100vw - 1240px) / 3) 9rem;
+  padding: 11rem calc((100vw - 1200px) / 3) 9rem;
 }
 
 .banner .wp-block-group__inner-container {
@@ -668,7 +668,7 @@ address {
 }
 
 .banner:not(.banner--noimage) .wp-block-column:first-of-type {
-  padding: 7rem calc((100vw - 1240px) / 5);
+  padding: 7rem calc((100vw - 1200px) / 5);
 }
 
 .banner h1,
@@ -740,8 +740,28 @@ address {
   margin-bottom: 6rem;
 }
 
+.zigzag .wp-block-column {
+  margin: 0;
+}
+
 .zigzag .wp-block-image {
   margin-bottom: 0;
+}
+
+.zigzag .content {
+  /* flex-basis: 55%;
+  flex-grow: 0; */
+  width: 55%;
+  padding: 6rem calc((100vw - 1200px) / 4);
+  background-color: #f2f2f2;
+}
+
+.zigzag .content--left {
+  padding-right: calc((100vw - 1200px) / 8);
+}
+
+.zigzag .content--right {
+  padding-left: calc((100vw - 1200px) / 8);
 }
 
 #primary .wp-block-group:last-of-type {
