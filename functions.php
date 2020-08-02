@@ -246,7 +246,7 @@ add_theme_support( 'editor-color-palette', array(
 	array(
 		'name'  => __( 'Jet Black', 'astraChild' ),
 		'slug'  => 'jet-black',
-		'color' => '#333',
+		'color' => '#121212',
 	),
 	array(
 		'name'  => __( 'Salamander Black', 'astraChild' ),
