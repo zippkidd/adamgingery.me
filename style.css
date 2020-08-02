@@ -255,6 +255,8 @@
   --darkcopperred: #AD5639;
   --bistre: #43281c;
 
+  --indigo: #083D77;
+
   --margin-width: 6vw;
   --stndrd-width: calc(100vw - (var(--margin-width) + var(--margin-width)));
   --cntnt-spacing: 4rem;
@@ -403,6 +405,13 @@ input[type="submit"],
 }
 .has-copper-red-background-color {
   background-color: var(--copperred)!important;
+}
+
+.has-indigo-color {
+  color: var(--indigo)!important;
+}
+.has-indigo-background-color {
+  background-color: var(--indigo)!important;
 }
 
 /*================== FONT STYLES: =================
