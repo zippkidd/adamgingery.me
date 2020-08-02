@@ -760,7 +760,7 @@ address {
 }
 
 .banner--noimage {
-  padding: 11rem calc((100vw - 1200px) / 3) 9rem;
+  padding: 11rem calc((100vw - 1200px) / 3) 10rem;
 }
 
 .banner .wp-block-group__inner-container {
