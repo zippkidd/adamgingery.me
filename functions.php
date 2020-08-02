@@ -240,6 +240,11 @@ add_theme_support( 'editor-color-palette', array(
 		'color' => '#333',
 	),
 	array(
+		'name'  => __( 'Salamander Black', 'astraChild' ),
+		'slug'  => 'salamander-black',
+		'color' => '#303f3f',
+	),
+	array(
 		'name'  => __( 'White', 'astraChild' ),
 		'slug'  => 'white',
 		'color' => '#fff',
