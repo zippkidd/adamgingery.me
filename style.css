@@ -784,7 +784,7 @@ address {
   color: var(--white);
 }
 
-.banner > *:last-of-type {
+.banner .wp-block-group__inner-container>*:last-of-type {
   margin-bottom: 0!important;
   padding-bottom: 0!important;
 }
@@ -853,6 +853,7 @@ address {
   margin-bottom: 6rem!important;
 }
 
+/* Zig Zag */
 .zigzag .wp-block-column {
   margin: 0;
 }
@@ -884,9 +885,14 @@ address {
 .wp-block-buttons:last-of-type .wp-block-button__link {
   margin: 3rem 0 0!important;
 }
+/* ** */
 
 #primary .wp-block-group:last-of-type {
   margin-bottom: 0;
+}
+
+.subbanner p {
+  font-size: 2rem;
 }
 
 /*=============== HOME PAGE STYLES: ===============
