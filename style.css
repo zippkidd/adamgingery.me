@@ -359,6 +359,14 @@ input[type="submit"],
   margin: 0!important;
 }
 
+.wp-block-button__link {
+  margin-bottom: 1.6em;
+}
+
+.wp-block-button__link:last-of-type {
+  margin-bottom: 0;
+}
+
 .wp-block-button__link,
 #contactSubmit   {
   -webkit-transition: all .15s ease-in;
