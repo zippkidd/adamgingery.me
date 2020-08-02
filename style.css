@@ -287,12 +287,6 @@ body {
   font-family: var(--noto-sans);
 }
 
-/*================= RESET STYLES: =================
-===================================================*/
-#primary {
-  margin-bottom: 3rem;
-}
-
 /*================== UTILITIES: ===================
 ===================================================*/
 .sr-only {
@@ -659,6 +653,10 @@ address {
 
 /*================= BANNER STYLES: ==================
 =====================================================*/
+.banner {
+  margin-bottom: 4rem!important;
+}
+
 .banner--noimage {
   padding: 11rem calc((100vw - 1240px) / 3) 9rem;
 }
@@ -730,9 +728,20 @@ address {
 
 /*=============== ALL PAGE STYLES: ===============
 ==================================================*/
-.banner,
+#primary {
+  margin: 0 0 4rem;
+}
+
 #primary .wp-block-group {
-  margin-bottom: 3rem;
+  margin-bottom: 12rem;
+}
+
+#primary .wp-block-columns {
+  margin-bottom: 6rem;
+}
+
+.zigzag .wp-block-image {
+  margin-bottom: 0;
 }
 
 #primary .wp-block-group:last-of-type {
