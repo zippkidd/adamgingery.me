@@ -601,7 +601,8 @@ address {
 
 /* Carousel */
 .carouselWrapper {
-	position: relative;
+  position: relative;
+  padding: 0 5%;
 }
 
 .carouselWrapper .next,
