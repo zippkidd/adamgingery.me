@@ -360,11 +360,7 @@ input[type="submit"],
 }
 
 .wp-block-button__link {
-  margin-bottom: 1.6em;
-}
-
-.wp-block-button__link:last-of-type {
-  margin-bottom: 0;
+  margin-bottom: 3.2em;
 }
 
 .wp-block-button__link,
@@ -373,7 +369,7 @@ input[type="submit"],
 	-o-transition: all .15s ease-in;
 	transition: all .15s ease-in;
   font-size: 1.8rem;
-  margin-top: 1.6em;
+  /* margin-top: 1.6em; */
 }
 
 .wp-block-button__link:hover,
@@ -814,6 +810,10 @@ address {
 
 .zigzag .content--right {
   padding-left: calc((100vw - 1200px) / 8);
+}
+
+.zigzag .wp-block-button__link {
+  margin-top: 1.6em;
 }
 
 #primary .wp-block-group:last-of-type {
