@@ -290,7 +290,7 @@ body {
 /*================= RESET STYLES: =================
 ===================================================*/
 #primary {
-  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
 /*================== UTILITIES: ===================
@@ -659,12 +659,6 @@ address {
 
 /*================= BANNER STYLES: ==================
 =====================================================*/
-.banner {
-  /* padding: 10rem 0 7.5rem; */
-  /* background-color: #023618; */
-  margin-bottom: 4em;
-}
-
 .banner--noimage {
   padding: 11rem calc((100vw - 1240px) / 3) 9rem;
 }
@@ -734,6 +728,16 @@ address {
 /*=============== TRUST BAR STYLES: ================
 ===================================================*/
 
+/*=============== ALL PAGE STYLES: ===============
+==================================================*/
+.banner,
+#primary .wp-block-group {
+  margin-bottom: 3rem;
+}
+
+#primary .wp-block-group:last-of-type {
+  margin-bottom: 0;
+}
 
 /*=============== HOME PAGE STYLES: ===============
 ==================================================*/
