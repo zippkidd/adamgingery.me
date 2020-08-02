@@ -795,11 +795,6 @@ address {
   background-color: var(--platinum);
 }
 
-.zigzag .content h3,
-.zigzag .content p {
-  color: var(--black)!important;
-}
-
 .zigzag .content--left {
   padding-right: calc((100vw - 1200px) / 8);
 }
