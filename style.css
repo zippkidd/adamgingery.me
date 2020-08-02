@@ -257,6 +257,7 @@
   --bistre: #43281c;
 
   --indigo: #083D77;
+  --oxfordblue: #0E1428;
 
   --margin-width: 6vw;
   --stndrd-width: calc(100vw - (var(--margin-width) + var(--margin-width)));
@@ -422,6 +423,13 @@ input[type="submit"],
 }
 .has-indigo-background-color {
   background-color: var(--indigo)!important;
+}
+
+.has-oxford-blue-color {
+  color: var(--oxfordblue)!important;
+}
+.has-oxford-blue-background-color {
+  background-color: var(--oxfordblue)!important;
 }
 
 /*================== FONT STYLES: =================

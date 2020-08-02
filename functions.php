@@ -234,6 +234,11 @@ add_theme_support( 'editor-color-palette', array(
 		'color' => '#083D77',
 	),
 	array(
+		'name'  => __( 'Oxford Blue', 'astraChild' ),
+		'slug'  => 'oxford-blue',
+		'color' => '#0E1428',
+	),
+	array(
 		'name'  => __( 'Black', 'astraChild' ),
 		'slug'  => 'black',
 		'color' => '#000',
