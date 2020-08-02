@@ -550,6 +550,18 @@ blockquote {
   margin-bottom: 3rem!important;
 }
 
+blockquote {
+  margin-top: 0!important;
+  margin-left: 0!important;
+  font-style: normal;
+  border-color: var(--whitesmoke);
+}
+
+blockquote cite {
+  display: inline-block;
+  margin-top: 3rem;
+}
+
 p:last-of-type,
 address:last-of-type,
 blockquote:last-of-type{
