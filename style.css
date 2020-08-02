@@ -308,6 +308,39 @@ body.stop-scroll {
   height: 100vh !important;
 }
 /*----------- Layout: -----------*/
+.wp-block-separator {
+  margin: 0 auto 12rem;
+  /* background: var(--salamanderblack); */
+  background: unset;
+  position: relative;
+  max-width: unset;
+}
+
+.wp-block-separator::before {
+  content: "";
+	position: absolute;
+	top: 0;
+	left: calc( ( (100vw - 1200px) / 2 ) * -1 );
+	right: calc( ( (100vw - 1200px) / 2 ) * -1 );
+	/* width: 100vw; */
+	height: .1rem;
+	background-image: linear-gradient(to right, transparent, var(--salamanderblack), transparent);
+}
+
+.wp-block-separator::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -1rem;
+  left: calc(50% - 2rem);
+  width: 2rem;
+  height: 2rem;
+  background: var(--darkcopperred);
+  border-radius: 50%;
+  border: .1rem solid var(--salamanderblack);
+}
+}
+
 .stndrd-rw {
   width: var(--stndrd-width) !important;
   max-width: var(--stndrd-width) !important;
@@ -349,7 +382,7 @@ input[type="submit"],
   display: table;
   text-transform: uppercase;
   text-align: center;
-  padding: 1.6rem 4rem 1.3rem;
+  /* padding: 1.6rem 4rem 1.3rem; */
   font-weight: 600;
   line-height: 1.2;
   margin-top: 3rem;
@@ -636,7 +669,7 @@ address {
 /* Contact Form */
 .contactForm input {
 	display: block;
-  min-width: 40%;
+  /* min-width: 40%; */
   margin: 0 auto;
 }
 
