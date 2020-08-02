@@ -368,8 +368,10 @@ input[type="submit"],
   -webkit-transition: all .15s ease-in;
 	-o-transition: all .15s ease-in;
 	transition: all .15s ease-in;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   /* margin-top: 1.6em; */
+  font-weight: 600!important;
+  text-transform: uppercase;
 }
 
 .wp-block-button__link:hover,
@@ -615,7 +617,8 @@ address {
 /* Contact Form */
 .contactForm input {
 	display: block;
-	width: 100%;
+  width: 65%;
+  margin: 0 auto;
 }
 
 .contactForm #contactSubmit {
