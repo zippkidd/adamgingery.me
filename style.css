@@ -657,7 +657,7 @@ address {
 }
 
 .banner--noimage {
-  padding: 7rem calc((100vw - 1240px) / 3) 5rem;
+  padding: 11rem calc((100vw - 1240px) / 3) 9rem;
 }
 
 .banner .wp-block-group__inner-container {
