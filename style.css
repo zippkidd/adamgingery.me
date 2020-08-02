@@ -652,13 +652,17 @@ address {
   /* background-color: #023618; */
 }
 
+.banner--noimage {
+  padding: 7rem calc((100vw - 1240px) / 3) 5rem;
+}
+
 .banner .wp-block-group__inner-container {
   /* max-width: 1240px;
   margin: 0 auto; */
   /* padding: 0 2rem; */
 }
 
-.banner .wp-block-column:first-of-type {
+.banner:not(.banner--noimage) .wp-block-column:first-of-type {
   padding: 7rem calc((100vw - 1240px) / 5);
 }
 
