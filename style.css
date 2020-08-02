@@ -617,7 +617,7 @@ address {
 /* Contact Form */
 .contactForm input {
 	display: block;
-  width: 65%;
+  min-width: 40%;
   margin: 0 auto;
 }
 
