@@ -240,6 +240,7 @@
   --black: #000;
   --white: #fff;
   --whitesmoke: #f2f2f2;
+  --platinum: #e5e5e5;
   --jetblack: #333;
   --salamanderblack: #303f3f;
 
@@ -398,10 +399,17 @@ input[type="submit"],
 }
 
 .has-white-smoke-color {
-  color: var(--white-smoke)!important;
+  color: var(--whitesmoke)!important;
 }
 .has-white-smoke-background-color {
   background-color: var(--whitesmoke)!important;
+}
+
+.has-platinum-color {
+  color: var(--platinum)!important;
+}
+.has-platinum-background-color {
+  background-color: var(--platinum)!important;
 }
 
 .has-hunter-green-color {

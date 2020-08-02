@@ -263,6 +263,11 @@ add_theme_support( 'editor-color-palette', array(
 		'slug'  => 'white-smoke',
 		'color' => '#f2f2f2',
 	),
+	array(
+		'name'  => __( 'Platinum', 'astraChild' ),
+		'slug'  => 'platinum',
+		'color' => '#e5e5e5',
+	),
 ) );
 //==
 
