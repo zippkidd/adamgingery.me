@@ -798,12 +798,12 @@ address {
   /* padding-right: calc((100vw - 1280px) / 2); */
 }
 
-.home .banner .wp-block-column:last-of-type {
-  padding: 8rem 0 0;
+/* .home .banner .wp-block-column:last-of-type { */
+  /* padding: 8rem 0 0; */
   /* background-color: var(--white); */
   /* position: relative; */
-  padding-right: 0;
-}
+  /* padding-right: 0; */
+/* } */
 
 .banner .wp-block-image {
   margin-bottom: 0;
