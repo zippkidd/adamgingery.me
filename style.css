@@ -622,14 +622,14 @@ address {
 }
 
 .carouselWrapper .next {
-	right: 0;
+	right: -10%;
 	-webkit-transform: translateY(-50%) rotate(45deg);
 	    -ms-transform: translateY(-50%) rotate(45deg);
 	        transform: translateY(-50%) rotate(45deg);
 }
 
 .carouselWrapper .prev {
-	left: 0;
+	left: -10%;
 	-webkit-transform: translateY(-50%) rotate(-135deg);
 	    -ms-transform: translateY(-50%) rotate(-135deg);
 	        transform: translateY(-50%) rotate(-135deg);
