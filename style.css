@@ -468,7 +468,7 @@ h5,
 h6 {
   font-family: var(--montserrat);
   font-weight: 600;
-  margin-bottom: 1.6em!important;
+  margin-bottom: 3rem!important;
   color: var(--jetblack)!important;
 }
 
@@ -540,6 +540,7 @@ button {
   font-family: var(--montserrat);
   font-weight: 300;
   color: var(--jetblack);
+  margin-bottom: 3rem!important;
 }
 
 p {
@@ -548,7 +549,7 @@ p {
 }
 
 p:last-of-type {
-  margin-bottom: 0;
+  margin-bottom: 0!important;
 }
 
 p:empty {
@@ -781,11 +782,11 @@ address {
 }
 
 #primary .wp-block-group {
-  margin-bottom: 12rem;
+  margin-bottom: 12rem!important;
 }
 
 #primary .wp-block-columns {
-  margin-bottom: 6rem;
+  margin-bottom: 6rem!important;
 }
 
 .zigzag .wp-block-column {
@@ -812,8 +813,12 @@ address {
   padding-left: calc((100vw - 1200px) / 8);
 }
 
-.zigzag .wp-block-button__link {
+/* .zigzag .wp-block-button__link {
   margin: 1.6em 0 0!important;
+} */
+
+.wp-block-buttons:last-of-type .wp-block-button__link {
+  margin: 3rem 0 0!important;
 }
 
 #primary .wp-block-group:last-of-type {
