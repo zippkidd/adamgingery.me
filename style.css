@@ -542,16 +542,23 @@ button {
   font-family: var(--montserrat);
   font-weight: 300;
   color: var(--jetblack);
+}
+
+p,
+address,
+blockquote {
   margin-bottom: 3rem!important;
+}
+
+p:last-of-type,
+address:last-of-type,
+blockquote:last-of-type{
+  margin-bottom: 0!important;
 }
 
 p {
   font-size: 1.6rem;
   line-height: 1.8;
-}
-
-p:last-of-type {
-  margin-bottom: 0!important;
 }
 
 p:empty {
