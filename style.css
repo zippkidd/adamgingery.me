@@ -768,6 +768,11 @@ address {
 
 .banner:not(.banner--noimage) .wp-block-column:first-of-type {
   padding: 7rem calc((100vw - 1200px) / 5);
+  flex-basis: 65%!important;
+}
+
+.banner:not(.banner--noimage) .wp-block-column:first-of-type {
+  flex-grow: 0;
 }
 
 .banner h1,
