@@ -662,6 +662,7 @@ address {
 .banner {
   /* padding: 10rem 0 7.5rem; */
   /* background-color: #023618; */
+  margin-bottom: 4em;
 }
 
 .banner--noimage {
