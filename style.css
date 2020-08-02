@@ -751,7 +751,7 @@ address {
 .zigzag .content {
   /* flex-basis: 55%;
   flex-grow: 0; */
-  width: 55%;
+  width: 65%;
   padding: 6rem calc((100vw - 1200px) / 4);
   background-color: #f2f2f2;
 }
