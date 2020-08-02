@@ -769,6 +769,7 @@ address {
 .banner:not(.banner--noimage) .wp-block-column:first-of-type {
   padding: 7rem calc((100vw - 1200px) / 5);
   flex-basis: 65%!important;
+  flex-grow: 0;
 }
 
 .banner:not(.banner--noimage) .wp-block-column:first-of-type {
