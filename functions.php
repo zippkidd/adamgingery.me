@@ -261,7 +261,7 @@ add_theme_support( 'editor-color-palette', array(
 	array(
 		'name'  => __( 'White Smoke', 'astraChild' ),
 		'slug'  => 'white-smoke',
-		'color' => '#f2f2f2',
+		'color' => '#F1FAEE',
 	),
 	array(
 		'name'  => __( 'Platinum', 'astraChild' ),
