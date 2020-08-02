@@ -355,6 +355,10 @@ input[type="submit"],
   margin-top: 3rem;
 }
 
+.wp-block-buttons.aligncenter .wp-block-button {
+  margin: 0!important;
+}
+
 .wp-block-button__link,
 #contactSubmit   {
   -webkit-transition: all .15s ease-in;
