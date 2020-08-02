@@ -801,7 +801,7 @@ address {
 .home .banner .wp-block-column:last-of-type {
   padding: 8rem 0 0;
   /* background-color: var(--white); */
-  position: relative;
+  /* position: relative; */
   padding-right: 0;
 }
 
@@ -809,14 +809,14 @@ address {
   margin-bottom: 0;
 }
 
-.home .banner .wp-block-column:last-of-type::before {
+/* .home .banner .wp-block-column:last-of-type::before {
   content: url(/wp-content/uploads/2020/08/swoop-better-persiangreen.svg);
   positio n: absolute;
   top: -.6rem;
   /* left: -0.25rem; */
-  bottom: 0;
-  width: 39.5rem;
-}
+  /* bottom: 0; */
+  /* width: 39.5rem; */
+} */
 
 .banner__headshot .wp-block-image {
   margin-bottom: 0;
