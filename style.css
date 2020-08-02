@@ -432,7 +432,7 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
-  text-align: left;
+  /* text-align: left; */
   /* padding-bottom: 1em; */
 }
 
@@ -443,6 +443,8 @@ h5,
 h6 {
   font-family: var(--montserrat);
   font-weight: 600;
+  margin-bottom: 1.6em!important;
+  color: var(--jetblack)!important;
 }
 
 h1 {
@@ -520,6 +522,10 @@ p {
   line-height: 1.8;
 }
 
+p:last-of-type {
+  margin-bottom: 0;
+}
+
 p:empty {
   display: none;
 }
@@ -531,7 +537,7 @@ span {
 
 a {
   font-weight: 500;
-  color: #5a798b;
+  color: var(--copperred);
 }
 
 ul,
