@@ -345,6 +345,19 @@ input[type="submit"],
   margin-top: 3rem;
 }
 
+.wp-block-button__link,
+#contactSubmit   {
+  -webkit-transition: all .15s ease-in;
+	-o-transition: all .15s ease-in;
+	transition: all .15s ease-in;
+	font-size: 1.8rem;
+}
+
+.wp-block-button__link:hover,
+.contactForm #contactSubmit:hover {
+	background-color: var(--darkcopperred)!important;
+}
+
 /*----------- Colors: -----------*/
 .has-black-color {
   color: var(--black)!important;
@@ -624,7 +637,7 @@ address {
 
 .carouselWrapper .next:hover,
 .carouselWrapper .prev:hover {
-	border-color: #757575;
+	border-color: var(--darkcopperred);
 }
 
 /*================= BANNER STYLES: ==================
