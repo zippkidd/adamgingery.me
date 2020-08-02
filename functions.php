@@ -253,11 +253,11 @@ add_theme_support( 'editor-color-palette', array(
 		'slug'  => 'white',
 		'color' => '#fff',
 	),
-	// array(
-	// 	'name'  => __( 'Dark gray', '' ),
-	// 	'slug'  => 'dark-gray',
-	// 	'color' => '#333',
-	// ),
+	array(
+		'name'  => __( 'White Smoke', 'astraChild' ),
+		'slug'  => 'white-smoke',
+		'color' => '#f2f2f2',
+	),
 ) );
 //==
 
