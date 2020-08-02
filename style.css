@@ -358,7 +358,8 @@ input[type="submit"],
   -webkit-transition: all .15s ease-in;
 	-o-transition: all .15s ease-in;
 	transition: all .15s ease-in;
-	font-size: 1.8rem;
+  font-size: 1.8rem;
+  margin-top: 1.6em;
 }
 
 .wp-block-button__link:hover,
@@ -692,6 +693,10 @@ address {
 .banner h1,
 .banner h2 {
   color: var(--white);
+}
+
+.banner h2 {
+  margin-bottom: 0!important;
 }
 
 .banner:not(.banner--noimage) h1 {
