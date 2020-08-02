@@ -289,6 +289,12 @@ body {
 
 /*================= RESET STYLES: =================
 ===================================================*/
+#primary {
+  margin-top: 0;
+}
+
+/*================== UTILITIES: ===================
+===================================================*/
 .sr-only {
   position: absolute;
   width: 0.1rem;
@@ -304,9 +310,6 @@ body.stop-scroll {
   overflow: hidden !important;
   height: 100vh !important;
 }
-
-/*================== UTILITIES: ===================
-===================================================*/
 /*----------- Layout: -----------*/
 .stndrd-rw {
   width: var(--stndrd-width) !important;
@@ -656,10 +659,6 @@ address {
 
 /*================= BANNER STYLES: ==================
 =====================================================*/
-.landing #primary {
-  margin-top: 0;
-}
-
 .banner {
   /* padding: 10rem 0 7.5rem; */
   /* background-color: #023618; */
