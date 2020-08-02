@@ -328,6 +328,10 @@ body.stop-scroll {
   margin-right: auto !important;
 }
 
+.mb-0 {
+  margin-bottom: 0!important;
+}
+
 .pt-0 {
   padding-top: 0!important;
 }
