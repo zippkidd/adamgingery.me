@@ -841,7 +841,12 @@ address {
   color: var(--white);
 }
 
-.banner .wp-block-group__inner-container>*:last-of-type {
+.banner--noimage .wp-block-group__inner-container>*:last-child {
+  margin-bottom: 0!important;
+  padding-bottom: 0!important;
+}
+
+.banner:not(.banner--noimage) .wp-block-column:first-of-type>*:last-child {
   margin-bottom: 0!important;
   padding-bottom: 0!important;
 }
