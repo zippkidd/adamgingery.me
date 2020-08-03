@@ -947,6 +947,10 @@ address {
   margin-bottom: calc(12rem + 14rem)!important;
 }
 
+.wave-group--bottom {
+  padding-bottom: 12rem;
+}
+
 .wave-group h2 {
   margin-bottom: 6rem!important;
 }
@@ -984,6 +988,18 @@ address {
   background-color: var(--salamanderblack)!important;
 }
 
+.wave-group--oxford::before {
+  content: url(/wp-content/uploads/2020/08/header-group-top-double-oxford.svg);
+  background: white;
+  /* height: 14rem; */
+  display: block;
+  font-size: 0;
+}
+
+.zigzag.wave-group--oxford .content {
+  background-color: var(--oxfordblue)!important;
+}
+
 /* ** */
 
 #primary .wp-block-group:last-of-type {
@@ -996,7 +1012,13 @@ address {
 
 /*=============== HOME PAGE STYLES: ===============
 ==================================================*/
+.home #primary {
+  margin-bottom: 0!important;
+}
 
+.featured-in .wp-block-column:not(:first-child) {
+  margin-left: 6rem;
+}
 
 
 /*============= CONTACT PAGE STYLES: =============
@@ -1017,6 +1039,10 @@ address {
 
 /*=================== FOOTER: ====================
 ==================================================*/
+footer>div {
+  border: none!important;
+}
+
 .ast-footer-overlay {
   background-color: var(--salamanderblack);
   padding: 2rem 0;
