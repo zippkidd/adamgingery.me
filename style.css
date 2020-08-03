@@ -892,12 +892,13 @@ address {
 /* ** */
 
 /* Wavy Groups */
-.wave-group {
-  padding-bottom: 6rem;
+#primary .wave-group {
+  /* padding-bottom: 6rem; */
+  margin-bottom: calc(12rem + 14rem)!important;
 }
 
 .wave-group h2 {
-  padding-top: 6rem;
+  margin-bottom: 6rem!important;
 }
 
 .wave-group .wp-block-column:first-of-type .wp-block-image {
@@ -916,9 +917,17 @@ address {
 .wave-group--salamander::before {
   content: url(/wp-content/uploads/2020/08/header-group-top-double.svg);
   background: white;
-  /* position: relative; */
-  height: 14rem;
+  /* height: 14rem; */
   display: block;
+  font-size: 0;
+}
+
+.wave-group--salamander::after {
+  content: url(/wp-content/uploads/2020/08/header-group-bottom-double.svg);
+  background: white;
+  height: 0;
+  display: block;
+  transform: translateY(100%);
 }
 
 .zigzag.wave-group--salamander .content {
