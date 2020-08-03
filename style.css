@@ -663,13 +663,18 @@ address {
 
 /*================ HEADER STYLES: ================
 ==================================================*/
-.main-header-menu .current-menu-item > .menu-link {
-  color: var(--darkcopperred);
-  font-weight: 600;
+.main-header-menu .current-menu-item > .menu-link:hover, {
+  color: var(--copperred);
 }
 
-.main-header-menu .current-menu-item > .menu-link:hover {
-  color: var(--copperred);
+.main-header-menu .current-menu-item > .menu-link,
+.main-header-menu li:not(.current-menu-item) > .menu-link:hover,
+.main-header-menu .menu-item:hover > .menu-link {
+  color: var(--darkcopperred);
+}
+
+.ast-desktop .main-header-menu.submenu-with-border .sub-menu {
+  border-top-color: var(--copperred);
 }
 /* .main-header-menu > .menu-item > a {
   color: var(--white);
