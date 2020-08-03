@@ -342,7 +342,6 @@ body.stop-scroll {
   border-radius: 50%;
   border: .1rem solid var(--salamanderblack);
 }
-}
 
 .stndrd-rw {
   width: var(--stndrd-width) !important;
@@ -848,7 +847,7 @@ address {
   /* left: -0.25rem; */
   /* bottom: 0; */
   /* width: 39.5rem; */
-} */
+/*} */
 
 .banner__headshot .wp-block-image {
   margin-bottom: 0;
