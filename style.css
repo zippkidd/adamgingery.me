@@ -671,18 +671,18 @@ address {
 /* Contact Form */
 .contactForm input {
 	display: block;
-  /* min-width: 40%; */
-  margin: 0 auto;
+  min-width: 100%;
 }
 
 .contactForm #contactSubmit {
-	margin-top: 1.8rem;
 	/* background-color: var(--copperred); */
 	/* border: 2px solid #fff; */
 	-webkit-transition: all .15s ease-in;
 	-o-transition: all .15s ease-in;
 	transition: all .15s ease-in;
-	font-size: 1.8rem;
+  font-size: 1.8rem;
+  min-width: unset;
+  margin: 1.8rem auto 0;
 }
 
 .contactForm #contactSubmit:hover {
