@@ -1043,6 +1043,10 @@ address {
   margin-left: 6rem;
 }
 
+.home #primary .wp-block-group:last-of-type {
+  margin-bottom: 0!important;
+}
+
 
 /*============= CONTACT PAGE STYLES: =============
 ==================================================*/
