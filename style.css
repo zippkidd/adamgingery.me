@@ -659,8 +659,18 @@ address {
   font-weight: 900 !important;
 }
 
+
+
 /*================ HEADER STYLES: ================
 ==================================================*/
+.main-header-menu .current-menu-item > .menu-link {
+  color: var(--darkcopperred);
+  font-weight: 600;
+}
+
+.main-header-menu .current-menu-item > .menu-link:hover {
+  color: var(--copperred);
+}
 /* .main-header-menu > .menu-item > a {
   color: var(--white);
   text-transform: uppercase;
