@@ -64,11 +64,6 @@ require_once trailingslashit( get_stylesheet_directory() ) . 'shortcodes.php';
 
 //== Astra Parent Theme Overrides
 
-// Remove Primary Header
-add_action( 'wp', 'astra_remove_header' );
-function astra_remove_header() {
-    remove_action( 'astra_masthead', 'astra_masthead_primary_template' );
-}
 // Remove premium options, add White Label
 if ( is_admin() ) {
 	require_once trailingslashit( get_stylesheet_directory() ) . 'inc/core/class-astra-admin-settings.php';
