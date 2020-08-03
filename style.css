@@ -665,6 +665,9 @@ address {
   color: var(--white);
   text-transform: uppercase;
 } */
+.main-header-bar {
+  border: none!important;
+}
 
 /*=============== SHORTCODES STYLES: =================
 =====================================================*/
