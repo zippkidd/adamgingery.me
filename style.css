@@ -866,6 +866,12 @@ address {
   margin-bottom: 0;
 }
 
+.zigzag .wp-block-group__inner-container > p {
+  width: 1200px;
+  margin: 0 auto 6rem!important;
+  font-size: 2rem;
+}
+
 .zigzag .content {
   /* flex-basis: 55%;
   flex-grow: 0; */
