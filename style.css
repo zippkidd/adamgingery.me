@@ -663,7 +663,7 @@ address {
 
 /*================ HEADER STYLES: ================
 ==================================================*/
-.main-header-menu .current-menu-item > .menu-link:hover, {
+.main-header-menu .current-menu-item > .menu-link:hover {
   color: var(--copperred);
 }
 
