@@ -755,8 +755,8 @@ address {
 
 /*================= BANNER STYLES: ==================
 =====================================================*/
-.banner {
-  margin-bottom: 4rem!important;
+#primary .banner {
+  margin-bottom: 6rem!important;
 }
 
 .banner--noimage {
@@ -842,11 +842,15 @@ address {
 /*=============== ALL PAGE STYLES: ===============
 ==================================================*/
 #primary {
-  margin: 0 0 12rem;
+  margin: 0 0 6rem;
 }
 
-#primary .wp-block-group {
+.primary .wp-block-group {
   margin-bottom: 12rem!important;
+}
+
+#primary .wp-block-group:last-of-type {
+  margin-bottom: 0!important;
 }
 
 #primary .wp-block-columns {
@@ -885,6 +889,42 @@ address {
 .wp-block-buttons:last-of-type .wp-block-button__link {
   margin: 3rem 0 0!important;
 }
+/* ** */
+
+/* Wavy Groups */
+.wave-group {
+  padding-bottom: 6rem;
+}
+
+.wave-group h2 {
+  padding-top: 6rem;
+}
+
+.wave-group .wp-block-column:first-of-type .wp-block-image {
+  margin-left: 4rem;
+}
+
+.wave-group .wp-block-column:last-of-type .wp-block-image {
+  margin-right: 4rem;
+}
+
+.wave-group img {
+  border-radius: 3rem;
+  /* padding: 0 2rem; */
+}
+
+.wave-group--salamander::before {
+  content: url(/wp-content/uploads/2020/08/header-group-top-double.svg);
+  background: white;
+  /* position: relative; */
+  height: 14rem;
+  display: block;
+}
+
+.zigzag.wave-group--salamander .content {
+  background-color: var(--salamanderblack)!important;
+}
+
 /* ** */
 
 #primary .wp-block-group:last-of-type {
