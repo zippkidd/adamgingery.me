@@ -574,7 +574,7 @@ div,
 input,
 textarea,
 button {
-  font-family: var(--montserrat);
+  font-family: var(--noto-sans);
   font-weight: 300;
   color: var(--jetblack);
 }
@@ -673,6 +673,28 @@ address {
 	display: block;
   min-width: 100%;
 }
+
+.contactForm input:not([type="submit"]),
+.contactForm textarea {
+  background-color: var(--white)!important;
+  border: .1rem solid var(--salamanderblack)!important;
+  border-radius: .5rem;
+  padding: 1.2rem 1rem;
+  font-size: 1.6rem!important;
+}
+
+.contactForm label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.contactForm label:first-of-type {
+  margin-top: 0;
+}
+
+/* .contactForm input:not([type="submit"]) {
+  padding: 1.5rem 1rem;
+} */
 
 .contactForm #contactSubmit {
 	/* background-color: var(--copperred); */
