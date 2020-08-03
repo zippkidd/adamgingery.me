@@ -656,13 +656,17 @@ address {
 }
 
 .weight--black {
-  font-weight: 900 !important;
+  font-weight: 900 !important;    
 }
 
 
 
 /*================ HEADER STYLES: ================
 ==================================================*/
+.main-header-menu .current-menu-item > .menu-link {
+  font-weight: 600;
+}
+
 .main-header-menu .current-menu-item > .menu-link:hover {
   color: var(--copperred);
 }
