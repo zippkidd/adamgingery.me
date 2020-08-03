@@ -8,7 +8,7 @@ function contact_form_func() {
 	wp_enqueue_script('validate_lib');
 	wp_enqueue_script('contact_form');
 $html = <<<HTML
-<form class="contactForm" action="https://formsubmit.co/thomastylek@gmail.com" method="POST" novalidate>
+<form class="contactForm" action="https://formsubmit.co/d3e8ff7e7300d22063d122dda9e0d164" method="POST" novalidate>
 	<label for="name">
 		Name
 		<span class="name error">Name is required.</span>
