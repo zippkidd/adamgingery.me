@@ -845,10 +845,10 @@ address {
   flex-grow: 0;
 }
 
-.banner h1,
+/* .banner h1,
 .banner h2 {
   color: var(--white);
-}
+} */
 
 .banner--noimage .wp-block-group__inner-container>*:last-child {
   margin-bottom: 0!important;
