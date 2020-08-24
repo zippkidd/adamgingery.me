@@ -58,7 +58,7 @@
   font-style: normal;
   font-weight: 900;
   src: local(''),
-       url('/wp-content/themes/astra-child/fonts/playfair-display-v21-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/wp-content/themes/astra-child/fonts/playfair-display-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('/wp-content/themes/astra-child/fonts/playfair-display-v21-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -317,6 +317,7 @@ body.stop-scroll {
   background: unset;
   position: relative;
   max-width: unset;
+  overflow: visiible;
 }
 
 .wp-block-separator::before {
@@ -663,6 +664,10 @@ address {
 
 /*================ HEADER STYLES: ================
 ==================================================*/
+.site-logo-img img {
+  width: 17.5rem;
+}
+
 .main-header-menu .current-menu-item > .menu-link {
   font-weight: 600;
 }
