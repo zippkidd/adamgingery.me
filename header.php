@@ -12,16 +12,13 @@ if (!defined('ABSPATH')) {
 <html <?php language_attributes(); ?>>
 <head>
 <?php astra_head_top(); ?>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
 <meta charset="<?php bloginfo('charset'); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <?php wp_head(); ?>
 <?php astra_head_bottom(); ?>
 </head>
 
 <body <?php astra_schema_body(); ?> <?php body_class(); ?>>
-
 <?php astra_body_top(); ?>
 <?php wp_body_open(); ?>
 <div 

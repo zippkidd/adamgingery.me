@@ -205,9 +205,15 @@ function astra_schema_body() {
 // if ( is_page_template('blog-page.php') ) {
 // 	add_filter( 'body_class', 'removeAstSinglePost' );
 // }
-//==
 
-//== Remove Default Astra theme font (astra.woff)
+
+add_action( 'astra_head_top','astra_head_top_custom_additions' );
+function astra_head_top_custom_additions () { ?>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+<?php }
+
+// Remove Default Astra theme font (astra.woff)
 // add_filter( 'astra_enable_default_fonts', '__return_false' );
 //==
 
