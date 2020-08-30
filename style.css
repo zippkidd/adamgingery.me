@@ -756,6 +756,17 @@ address {
 .banner .wp-block-column:last-of-type {
   /* margin-right: calc((100vw - 1280px) / 2); */
   margin: 0;
+  position: relative;
+}
+
+.banner .wp-block-column:last-of-type::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  width: 5vw;
+  background: linear-gradient(to right, var(--salamanderblack), transparent);
 }
 
 .banner img {
