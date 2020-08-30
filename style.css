@@ -1070,7 +1070,7 @@ footer p {
   }
   .banner:not(.banner--noimage) .wp-block-column:first-of-type {
     flex-basis: 100%!important;
-    padding: 4rem 5vw;
+    padding: 4rem 10vw;
   }
   .banner h1 {
     padding-bottom: 0;
