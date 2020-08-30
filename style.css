@@ -869,7 +869,7 @@ address {
 /* Wavy Groups */
 #primary .wave-group {
   /* padding-bottom: 6rem; */
-  margin-bottom: calc(12rem + 14rem)!important;
+  margin-bottom: calc(6rem + 6vw)!important;
 }
 
 .wave-group--bottom {
@@ -895,7 +895,7 @@ address {
 
 .wave-group--salamander::before {
   content: url(/wp-content/uploads/2020/08/header-group-top-double.svg);
-  background: white;
+  background: linear-gradient(to top, var(--salamanderblack) 1rem,#fff 1rem,#fff);
   /* height: 14rem; */
   display: block;
   font-size: 0;
@@ -903,7 +903,7 @@ address {
 
 .wave-group--salamander::after {
   content: url(/wp-content/uploads/2020/08/header-group-bottom-double.svg);
-  background: white;
+  background: linear-gradient(to top, var(--oxfordblue) 1rem, #fff 1rem, #fff);
   height: 0;
   display: block;
   transform: translateY(100%);
