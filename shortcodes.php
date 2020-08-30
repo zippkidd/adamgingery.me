@@ -49,22 +49,28 @@ $html = <<<HTML
 	<div class="prev"></div>
 	<div class="carousel">
 		<div>
-			<figure class="txt-center">
-				<!-- Slide Content Here -->
-				<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt="">
-			</figure>
+			<a href="">
+				<figure class="has-text-align-center">
+					<!-- Slide Content Here -->
+					<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt="">
+				</figure>
+			</a>
 		</div>
 		<div>
-			<figure class="txt-center">
-				<!-- Slide Content Here -->
-				<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt="">
-			</figure>
+			<a href="">
+				<figure class="has-text-align-center">
+					<!-- Slide Content Here -->
+					<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt="">
+				</figure>
+			</a>
 		</div>
 		<div>
-			<figure class="txt-center">
-				<!-- Slide Content Here -->
-				<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt="">
-			</figure>
+			<a href="">
+				<figure class="has-text-align-center">
+					<!-- Slide Content Here -->
+					<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt="">
+				</figure>
+			</a>
 		</div>
 	</div>
 	<div class="next"></div>
