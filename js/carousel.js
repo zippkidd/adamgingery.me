@@ -61,9 +61,9 @@
       draggable: false
     }); // Functions
 
-    var intervalId = window.setInterval(function () {
-      mySiema.next();
-    }, 4000);
+    // var intervalId = window.setInterval(function () {
+    //   mySiema.next();
+    // }, 4000);
 
     var reset = function reset() {
       window.clearInterval(intervalId);

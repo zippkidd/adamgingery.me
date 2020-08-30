@@ -51,19 +51,19 @@ $html = <<<HTML
 		<div>
 			<figure class="txt-center">
 				<!-- Slide Content Here -->
-				<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale.jpg" alt="">
+				<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt="">
 			</figure>
 		</div>
 		<div>
 			<figure class="txt-center">
 				<!-- Slide Content Here -->
-				<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale.jpg" alt="">
+				<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt="">
 			</figure>
 		</div>
 		<div>
 			<figure class="txt-center">
 				<!-- Slide Content Here -->
-				<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale.jpg" alt="">
+				<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt="">
 			</figure>
 		</div>
 	</div>
