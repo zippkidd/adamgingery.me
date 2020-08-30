@@ -808,6 +808,10 @@ address {
   padding: 0 4rem;
 }
 
+.featured-in .wp-block-column {
+  flex-grow: 1!important;
+}
+
 /*=============== ALL PAGE STYLES: ===============
 ==================================================*/
 #primary {
@@ -836,15 +840,15 @@ address {
 }
 
 .zigzag .wp-block-group__inner-container > p {
-  width: 75%;
-  margin: 0 auto 6rem!important;
-  font-size: 2rem;
+  /* width: 75%; */
+  margin: 0 5vw 6rem!important;
+  font-size: 1.8rem;
 }
 
 .zigzag .content {
   /* flex-basis: 55%;
   flex-grow: 0; */
-  width: 65%;
+  /* width: 65%; */
   /* padding: 6rem calc((100vw - 1200px) / 4); */
   background-color: var(--whitesmoke);
 }
@@ -876,17 +880,17 @@ address {
   padding-bottom: 12rem;
 }
 
-.wave-group h2 {
+/* .wave-group h2 {
   margin-bottom: 6rem!important;
-}
+} */
 
-.wave-group .wp-block-column:first-of-type .wp-block-image {
-  margin-left: 4rem;
+/* .wave-group .wp-block-column:first-of-type .wp-block-image {
+  margin-left: 5vw;
 }
 
 .wave-group .wp-block-column:last-of-type .wp-block-image {
-  margin-right: 4rem;
-}
+  margin-right: 5vw;
+} */
 
 .wave-group img {
   border-radius: 3rem;
@@ -935,6 +939,7 @@ address {
 ==================================================*/
 .home #primary {
   margin-bottom: 0!important;
+  padding-bottom: 0;
 }
 
 /* .featured-in .wp-block-column:not(:first-child) {
@@ -987,8 +992,25 @@ footer p {
 /*------------------- [min 451px] ------------------*/
 @media only screen and (min-width: 451px) {}
 
+@media only screen and (max-width: 599px) {
+  .wave-group .wp-block-image,
+  .zigzag .wp-block-image {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .zigzag .content {
+    flex-basis: 65%;
+  }
+  .zigzag .wp-block-column:not(.content) {
+    flex-basis: 35%!important;
+  }
+}
+
 /*------------------- [max 640px] ------------------*/
-@media only screen and (max-width: 640px) {}
+@media only screen and (max-width: 640px) {
+}
 
 /*------------------- [min 641px] ------------------*/
 @media only screen and (min-width: 641px) {}
@@ -996,8 +1018,28 @@ footer p {
 /*------------------- [max 767px] ------------------*/
 @media only screen and (max-width: 767px) {}
 
+@media only screen and (max-width: 781px) and (min-width: 600px) {
+  .wave-group .wp-block-column,
+  .zigzag .wp-block-column {
+    flex-grow: 1;
+  }
+}
 /*------------------- [min 768px] ------------------*/
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .zigzag .content {
+    padding: 2rem 5vw;
+  }
+}
+
+/* Mobile Menu Appears */
+@media only screen and (max-width: 921px) {
+  .site-logo-img img {
+    width:10rem;
+  }
+  .ast-button-wrap .menu-toggle .menu-toggle-icon:before {
+    color: var(--salamanderblack);
+  }
+}
 
 /*------------------- [max 980px] ------------------*/
 @media only screen and (max-width: 980px) {
@@ -1011,14 +1053,36 @@ footer p {
   .banner h1 {
     padding-bottom: 0;
   }
+  .zigzag .content {
+    padding: 2rem 5vw;
+  }
+  .wave-group h2 {
+    margin-top: 2rem;
+  }
 }
 
 /*------------------- [min 981px] ------------------*/
-@media only screen and (min-width: 981px) {}
+@media only screen and (min-width: 981px) {
+  .wave-group h2 {
+    margin-bottom: 6rem!important;
+  }
+}
 
 @media only screen and (min-width: 981px) and (max-width: 1279px) {
   .banner:not(.banner--noimage) .wp-block-column:first-of-type {
     padding-left: 5vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .zigzag .content {
+    padding: 6rem 5vw;
+  }
+  .zigzag .wp-block-group__inner-container > p {
+    font-size: 2rem;
+    width: 80%;
+    margin-left: auto!important;
+    margin-right: auto!important;
   }
 }
 
@@ -1038,10 +1102,16 @@ footer p {
   .zigzag .content--right {
     padding-left: calc((100vw - 1200px) / 8);
   }
+
+  .wave-group .wp-block-column:first-of-type .wp-block-image {
+    margin-left: 4rem;
+  }
+
+  .wave-group .wp-block-column:last-of-type .wp-block-image {
+    margin-right: 4rem;
+  }
 }
 
 @media only screen and (max-width: 1279px) {
-  .zigzag .content {
-    padding: 6rem 5vw;
-  }
+  
 }
