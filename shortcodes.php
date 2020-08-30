@@ -49,28 +49,22 @@ $html = <<<HTML
 	<div class="prev"></div>
 	<div class="carousel">
 		<div>
-			<a href="">
-				<figure class="has-text-align-center">
-					<!-- Slide Content Here -->
-					<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt="">
-				</figure>
-			</a>
+			<figure class="has-text-align-center">
+				<!-- Slide Content Here -->
+				<a href="#"><img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt=""></a>
+			</figure>
 		</div>
 		<div>
-			<a href="">
-				<figure class="has-text-align-center">
-					<!-- Slide Content Here -->
-					<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt="">
-				</figure>
-			</a>
+			<figure class="has-text-align-center">
+				<!-- Slide Content Here -->
+				<a href="#"><img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt=""></a>
+			</figure>
 		</div>
 		<div>
-			<a href="">
-				<figure class="has-text-align-center">
-					<!-- Slide Content Here -->
-					<img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt="">
-				</figure>
-			</a>
+			<figure class="has-text-align-center">
+				<!-- Slide Content Here -->
+				<a href="#"><img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt=""></a>
+			</figure>
 		</div>
 	</div>
 	<div class="next"></div>
