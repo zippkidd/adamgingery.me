@@ -819,7 +819,9 @@ address {
 /*=============== ALL PAGE STYLES: ===============
 ==================================================*/
 #primary {
-  margin: 0 0 6rem;
+  padding-top: 0!important;
+  margin-bottom: 6rem!important;
+  padding-bottom: 0;
 }
 
 .primary .wp-block-group {
@@ -831,7 +833,7 @@ address {
 }
 
 #primary .wp-block-columns {
-  margin-bottom: 6rem!important;
+  margin-bottom: 0!important;
 }
 
 /* Zig Zag */
@@ -877,7 +879,7 @@ address {
 /* Wavy Groups */
 #primary .wave-group {
   /* padding-bottom: 6rem; */
-  margin-bottom: calc(6rem + 6vw)!important;
+  margin-bottom: calc(6rem + 8vw)!important;
 }
 
 .wave-group--bottom {
@@ -933,6 +935,14 @@ address {
   background-color: var(--oxfordblue)!important;
 }
 
+.zigzag p:last-of-type {
+  margin-bottom: 3rem!important;
+}
+
+.zigzag .wp-block-group__inner-container > p {
+  margin-bottom: 6rem!important;
+}
+
 /* ** */
 
 .subbanner p {
@@ -943,9 +953,7 @@ address {
 ==================================================*/
 .home #primary {
   margin-bottom: 0!important;
-  padding-bottom: 0;
 }
-
 /* .featured-in .wp-block-column:not(:first-child) {
   margin-left: 6rem;
 } */
@@ -997,9 +1005,19 @@ footer p {
 @media only screen and (min-width: 451px) {}
 
 @media only screen and (max-width: 599px) {
-  .wave-group .wp-block-image,
-  .zigzag .wp-block-image {
+  /* .wave-group .wp-block-image, */
+  .zigzag .wp-block-column:not(.content) {
     display: none;
+  }
+  .wp-block-columns .wp-block-column {
+    margin-bottom: 6rem;
+  }
+
+  .wp-block-columns .wp-block-column:last-of-type {
+    margin-bottom: 0;
+  }
+  .zigzag .wp-block-columns .wp-block-column:last-of-type {
+    margin-bottom: 6rem;
   }
 }
 
