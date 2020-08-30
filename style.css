@@ -645,7 +645,7 @@ address {
 /* Carousel */
 .carouselWrapper {
   position: relative;
-  padding: 0 5%;
+  padding: 0 5rem;
 }
 
 .carouselWrapper .next,
@@ -666,14 +666,14 @@ address {
 }
 
 .carouselWrapper .next {
-	right: -10%;
+	right: 1rem;
 	-webkit-transform: translateY(-50%) rotate(45deg);
 	    -ms-transform: translateY(-50%) rotate(45deg);
 	        transform: translateY(-50%) rotate(45deg);
 }
 
 .carouselWrapper .prev {
-	left: -10%;
+	left: 1rem;
 	-webkit-transform: translateY(-50%) rotate(-135deg);
 	    -ms-transform: translateY(-50%) rotate(-135deg);
 	        transform: translateY(-50%) rotate(-135deg);
