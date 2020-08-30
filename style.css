@@ -196,7 +196,7 @@ body.stop-scroll {
   background: unset;
   position: relative;
   max-width: unset;
-  overflow: visiible;
+  overflow: visible;
 }
 
 .wp-block-separator::before {
