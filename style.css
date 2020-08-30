@@ -172,6 +172,10 @@ body {
   font-family: var(--noto-sans);
 }
 
+#content {
+  min-height: calc(100vh - var(--headerHeight) - var(--footerHeight));
+}
+
 /*================== UTILITIES: ===================
 ===================================================*/
 .sr-only {
