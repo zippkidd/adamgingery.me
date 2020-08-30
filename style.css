@@ -1001,7 +1001,7 @@ footer p {
 
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   .zigzag .content {
-    flex-basis: 65%;
+    flex-basis: 65%!important;
   }
   .zigzag .wp-block-column:not(.content) {
     flex-basis: 35%!important;
