@@ -804,6 +804,9 @@ address {
 
 /*=============== TRUST BAR STYLES: ================
 ===================================================*/
+.featured-in {
+  padding: 0 4rem;
+}
 
 /*=============== ALL PAGE STYLES: ===============
 ==================================================*/
@@ -934,9 +937,9 @@ address {
   margin-bottom: 0!important;
 }
 
-.featured-in .wp-block-column:not(:first-child) {
+/* .featured-in .wp-block-column:not(:first-child) {
   margin-left: 6rem;
-}
+} */
 
 .home #primary .wp-block-group:last-of-type {
   margin-bottom: 0!important;
