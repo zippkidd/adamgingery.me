@@ -725,9 +725,9 @@ address {
   flex-grow: 0;
 }
 
-.banner:not(.banner--noimage) .wp-block-column:first-of-type {
+/* .banner:not(.banner--noimage) .wp-block-column:first-of-type {
   flex-grow: 0;
-}
+} */
 
 /* .banner h1,
 .banner h2 {
@@ -836,7 +836,7 @@ address {
 }
 
 .zigzag .wp-block-group__inner-container > p {
-  width: 1200px;
+  width: 75%;
   margin: 0 auto 6rem!important;
   font-size: 2rem;
 }
@@ -845,17 +845,17 @@ address {
   /* flex-basis: 55%;
   flex-grow: 0; */
   width: 65%;
-  padding: 6rem calc((100vw - 1200px) / 4);
+  /* padding: 6rem calc((100vw - 1200px) / 4); */
   background-color: var(--whitesmoke);
 }
 
-.zigzag .content--left {
+/* .zigzag .content--left {
   padding-right: calc((100vw - 1200px) / 8);
 }
 
 .zigzag .content--right {
   padding-left: calc((100vw - 1200px) / 8);
-}
+} */
 
 /* .zigzag .wp-block-button__link {
   margin: 1.6em 0 0!important;
@@ -1000,13 +1000,48 @@ footer p {
 @media only screen and (min-width: 768px) {}
 
 /*------------------- [max 980px] ------------------*/
-@media only screen and (max-width: 980px) {}
+@media only screen and (max-width: 980px) {
+  .banner .wp-block-column:last-of-type {
+    display: none;
+  }
+  .banner:not(.banner--noimage) .wp-block-column:first-of-type {
+    flex-basis: 100%!important;
+    padding: 4rem 5vw;
+  }
+  .banner h1 {
+    padding-bottom: 0;
+  }
+}
 
 /*------------------- [min 981px] ------------------*/
 @media only screen and (min-width: 981px) {}
+
+@media only screen and (min-width: 981px) and (max-width: 1279px) {
+  .banner:not(.banner--noimage) .wp-block-column:first-of-type {
+    padding-left: 5vw;
+  }
+}
 
 /*------------------- [min 1200px] ------------------*/
 @media only screen and (min-width: 1201px) {}
 
 /*------------------- [min 1280px] ------------------*/
-@media only screen and (min-width: 1281px) {}
+@media only screen and (min-width: 1280px) {
+  .zigzag .content {
+    padding: 6rem calc((100vw - 1200px) / 4);
+  }
+
+  .zigzag .content--left {
+    padding-right: calc((100vw - 1200px) / 8);
+  }
+  
+  .zigzag .content--right {
+    padding-left: calc((100vw - 1200px) / 8);
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .zigzag .content {
+    padding: 6rem 5vw;
+  }
+}
