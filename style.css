@@ -773,6 +773,10 @@ address {
   background: linear-gradient(to right, var(--salamanderblack), transparent);
 }
 
+.banner.has-oxford-blue-background-color .wp-block-column:last-of-type:last-of-type::before {
+  background: linear-gradient(to right, var(--oxfordblue), transparent);
+}
+
 .banner img {
   /* padding-right: calc((100vw - 1280px) / 2); */
 }
