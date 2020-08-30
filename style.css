@@ -903,10 +903,10 @@ address {
 
 .wave-group--salamander::after {
   content: url(/wp-content/uploads/2020/08/header-group-bottom-double.svg);
-  background: linear-gradient(to top, var(--oxfordblue) 1rem, #fff 1rem, #fff);
+  /* background: linear-gradient(to top, var(--oxfordblue) 1rem, #fff 1rem, #fff); */
   height: 0;
   display: block;
-  transform: translateY(100%);
+  /* transform: translateY(100%); */
 }
 
 .zigzag.wave-group--salamander .content {
@@ -915,7 +915,7 @@ address {
 
 .wave-group--oxford::before {
   content: url(/wp-content/uploads/2020/08/header-group-top-double-oxford.svg);
-  background: white;
+  background: linear-gradient(to top, var(--oxfordblue) 1rem,#fff 1rem,#fff);;
   /* height: 14rem; */
   display: block;
   font-size: 0;
