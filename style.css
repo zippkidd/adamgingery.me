@@ -698,7 +698,7 @@ address {
 
 .banner--noimage.has-salamander-black-background-color::after {
   content: url(/wp-content/uploads/2020/08/banner-noimage-wave-salamander.svg);
-  background: white;
+  background: transparent;
   display: block;
   position: absolute;
   left: calc(-50vw + 50%);
@@ -708,7 +708,7 @@ address {
 
 .banner--noimage.has-oxford-blue-background-color::after {
   content: url(/wp-content/uploads/2020/08/banner-noimage-wave-oxford.svg);
-  background: white;
+  background: transparent;
   display: block;
   position: absolute;
   left: calc(-50vw + 50%);
@@ -819,6 +819,7 @@ address {
 /*=============== ALL PAGE STYLES: ===============
 ==================================================*/
 #primary {
+  margin-top: 0!important;
   padding-top: 0!important;
   margin-bottom: 6rem!important;
   padding-bottom: 0;
@@ -839,6 +840,10 @@ address {
 /* Zig Zag */
 .zigzag .wp-block-column {
   margin: 0;
+}
+
+#primary .zigzag:not(.wave-group) .wp-block-columns {
+  margin-bottom: 3rem!important;
 }
 
 .zigzag .wp-block-image {
@@ -1065,6 +1070,29 @@ footer p {
 
 /*------------------- [max 980px] ------------------*/
 @media only screen and (max-width: 980px) {
+  .banner.has-salamander-black-background-color,
+  .banner.has-oxford-blue-background-color {
+    margin-bottom: calc(6rem + 7.2917vw)!important;
+    position: relative;
+  }
+  .banner.has-salamander-black-background-color::after {
+    content: url(/wp-content/uploads/2020/08/banner-noimage-wave-salamander.svg);
+    background: transparent;
+    display: block;
+    position: absolute;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+    bottom: -7.2917vw;
+  }
+  .banner.has-oxford-blue-background-color::after {
+    content: url(/wp-content/uploads/2020/08/banner-noimage-wave-oxford.svg);
+    background: transparent;
+    display: block;
+    position: absolute;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+    bottom: -7.2917vw;
+  }
   .banner .wp-block-column:last-of-type {
     display: none;
   }
