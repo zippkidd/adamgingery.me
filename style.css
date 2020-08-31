@@ -1115,6 +1115,12 @@ footer p {
   .ast-button-wrap .menu-toggle .menu-toggle-icon:before {
     color: var(--salamanderblack);
   }
+  .menu-item-type-custom span {
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: #eaeaea;
+    padding-left: 2rem;
+  }
 }
 
 /*------------------- [max 980px] ------------------*/
