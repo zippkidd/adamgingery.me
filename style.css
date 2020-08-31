@@ -551,6 +551,10 @@ address {
   width: 17.5rem;
 }
 
+.main-header-menu .menu-item, .main-header-bar .ast-masthead-custom-menu-items {
+  padding: 1rem 0;
+}
+
 .main-header-menu .current-menu-item > .menu-link {
   font-weight: 600;
 }
