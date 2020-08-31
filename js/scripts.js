@@ -132,9 +132,11 @@
     }
 
     // Add longtitle class to h1s over 30 characters
-    var title = document.querySelector('h1');
-    if (title.innerText.length > 30) {
-      title.classList.add('longtitle');
+    if (document.querySelector('h1')) {
+      var title = document.querySelector('h1');
+      if (title.innerText.length > 30) {
+        title.classList.add('longtitle');
+      }
     }
   }
 
