@@ -1157,7 +1157,7 @@ footer p {
 /*------------------- [min 1200px] ------------------*/
 @media (min-width: 1200px) {
   .banner {
-      padding: 0;
+      padding: 0!important;
   }
 }
 @media only screen and (min-width: 1201px) {}
