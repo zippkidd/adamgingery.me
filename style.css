@@ -1116,6 +1116,7 @@ footer p {
   .banner:not(.banner--noimage) .wp-block-column:first-of-type {
     flex-basis: 100%!important;
     padding: 4rem 10vw 1rem;
+    margin-bottom: 0!important;
   }
   .banner h1 {
     padding-bottom: 0;
@@ -1154,6 +1155,11 @@ footer p {
 }
 
 /*------------------- [min 1200px] ------------------*/
+@media (min-width: 1200px) {
+  .banner {
+      padding: 0;
+  }
+}
 @media only screen and (min-width: 1201px) {}
 
 /*------------------- [min 1280px] ------------------*/
