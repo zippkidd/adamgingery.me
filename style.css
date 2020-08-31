@@ -748,7 +748,9 @@ address {
   padding-bottom: 0!important;
 }
 
-.banner:not(.banner--noimage) h1 {
+/* .banner:not(.banner--noimage) h1, */
+.banner h1,
+.banner h2 {
   line-height: 1!important;
 }
 
@@ -1180,5 +1182,7 @@ footer p {
 }
 
 @media only screen and (max-width: 1279px) {
-  
+  .banner h2 {
+    font-size: 3rem;
+  }
 }
