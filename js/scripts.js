@@ -129,7 +129,13 @@
       if (menuItems[i].getAttribute('href') === '#') {
         menuItems[i].outerHTML = "<span>".concat(menuItems[i].innerHTML, "</span>");
       }
-    }    
+    }
+
+    // Add longtitle class to h1s over 30 characters
+    var title = document.querySelector('h1');
+    if (title.innerText.length > 30) {
+      title.classList.add('longtitle');
+    }
   }
 
   function allLoaded() {

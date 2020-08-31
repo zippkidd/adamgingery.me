@@ -753,8 +753,13 @@ address {
 }
 
 .banner h1 {
-  font-size: 8rem;
+  /* font-size: 8rem; */
+  font-size: 6rem;
   padding-bottom: .25em;
+}
+
+.banner h1.longtitle {
+  font-size: 5rem;
 }
 
 .banner .wp-block-column:last-of-type {
@@ -1145,6 +1150,14 @@ footer p {
 
 /*------------------- [min 1280px] ------------------*/
 @media only screen and (min-width: 1280px) {
+  .banner h1 {
+    font-size: 8rem;
+  }
+
+  .banner h1.longtitle {
+    font-size: 6rem;
+  }
+
   .zigzag .content {
     padding: 6rem calc((100vw - 1200px) / 4);
   }
