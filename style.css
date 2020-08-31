@@ -1081,6 +1081,10 @@ footer p {
 
 /*------------------- [max 980px] ------------------*/
 @media only screen and (max-width: 980px) {
+  #primary .banner {
+    margin-bottom: calc(6vw + 7.5vw)!important;
+  }
+
   .banner.has-salamander-black-background-color,
   .banner.has-oxford-blue-background-color {
     margin-bottom: calc(6rem + 7.2917vw)!important;
@@ -1090,26 +1094,28 @@ footer p {
     content: url(/wp-content/uploads/2020/08/banner-noimage-wave-salamander.svg);
     background: transparent;
     display: block;
-    position: absolute;
+    position: relative;
     left: calc(-50vw + 50%);
     width: 100vw;
-    bottom: -7.2917vw;
+    /* bottom: -7.2917vw; */
+    height: 0;
   }
   .banner.has-oxford-blue-background-color::after {
     content: url(/wp-content/uploads/2020/08/banner-noimage-wave-oxford.svg);
     background: transparent;
     display: block;
-    position: absolute;
+    position: relative;
     left: calc(-50vw + 50%);
     width: 100vw;
-    bottom: -7.2917vw;
+    /* bottom: -7.2917vw; */
+    height: 0;
   }
   .banner .wp-block-column:last-of-type {
     display: none;
   }
   .banner:not(.banner--noimage) .wp-block-column:first-of-type {
     flex-basis: 100%!important;
-    padding: 4rem 10vw;
+    padding: 4rem 10vw 1rem;
   }
   .banner h1 {
     padding-bottom: 0;
