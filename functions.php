@@ -164,7 +164,7 @@ function astra_primary_navigation_markup() {
 add_action( 'astra_masthead_content', 'astra_primary_navigation_markup', 10 );
 
 
-// Make sure blog-page.php get's 'Blog' schema type
+// Make sure page-blog.php get's 'Blog' schema type
 /**
  * Adds schema tags to the body classes.
  *
@@ -177,7 +177,7 @@ function astra_schema_body() {
 	}
 
 	// Check conditions.
-	$is_blog = ( is_home() || is_archive() || is_attachment() || is_tax() || is_single() || is_page_template('blog-page.php') ) ? true : false;
+	$is_blog = ( is_home() || is_archive() || is_attachment() || is_tax() || is_single() || is_page_template('page-blog.php') ) ? true : false;
 
 	// Set up default itemtype.
 	$itemtype = 'WebPage';
@@ -194,7 +194,7 @@ function astra_schema_body() {
 	echo apply_filters( 'astra_schema_body', "itemtype='https://schema.org/" . esc_attr( $result ) . "' itemscope='itemscope'" ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 }
 
-// Remove ast-single-post for blog-page.php
+// Remove ast-single-post for page-blog.php
 // function removeAstSinglePost( $classes ) {
 //     if ( isset( $classes['ast-single-post'] ) ) {
 //         unset( $classes['ast-single-post'] );
@@ -202,7 +202,7 @@ function astra_schema_body() {
 //     return $classes;
 // }
 
-// if ( is_page_template('blog-page.php') ) {
+// if ( is_page_template('page-blog.php') ) {
 // 	add_filter( 'body_class', 'removeAstSinglePost' );
 // }
 

@@ -23,7 +23,12 @@ get_header( 'blog' ); ?>
 		<?php //astra_content_loop(); ?>
 
 		<main id="main" class="site-main">
-			<div class="ast-row">
+			<div class="entry-content clear">
+				<div class="wp-block-group alignfull banner banner--noimage <?php echo resolveBannerBG(); ?> has-background">
+					<div class="wp-block-group__inner-container">
+						<h1 class="has-text-align-center has-white-color has-text-color">Blog</h1>
+					</div>
+				</div>
 				<?php
 				// truncate the_content() to 55 words
 				// Let's build custom wp_query here...
@@ -113,8 +118,7 @@ get_header( 'blog' ); ?>
 				// $wp_query = $temp_query;
 
 				?>
-
-			</div> <!-- .ast-row -->
+			</div><!-- .entry-content.clear -->
 		</main>
 
 		<?php astra_pagination(); ?>
