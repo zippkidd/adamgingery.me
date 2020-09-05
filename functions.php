@@ -358,7 +358,7 @@ function resolvePrimaryMenu() {
 }
 
 /**
- * Resolve which <header> class to add based on silo
+ * Resolve which banner background class based on silo
  * Home || Marketing = salamander-black
  * Music || Podcast = oxford-blue
  */
