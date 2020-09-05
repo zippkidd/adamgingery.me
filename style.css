@@ -144,7 +144,7 @@
 
   --margin-width: 6vw;
   --stndrd-width: calc(100vw - (var(--margin-width) + var(--margin-width)));
-  --cntnt-spacing: 4rem;
+  --cntnt-spacing: 6rem;
   --playfair-display: 'Playfair Display', serif;
   --noto-sans: 'Noto Sans', sans-serif;
 }
@@ -240,7 +240,12 @@ body.stop-scroll {
 }
 
 .cntnt-sctn {
-  padding: var(--cntnt-spacing) 0 !important;
+  padding-top: var(--cntnt-spacing)!important;
+  padding-bottom: var(--cntnt-spacing) !important;
+}
+
+.cntnt-sctn:last-of-type {
+  padding-bottom: 0!important;
 }
 
 .mx-auto {
@@ -249,7 +254,7 @@ body.stop-scroll {
   margin-right: auto !important;
 }
 
-.mb-0 {
+body .mb-0 {
   margin-bottom: 0!important;
 }
 
@@ -691,15 +696,15 @@ address {
 
 /*================= BANNER STYLES: ==================
 =====================================================*/
-#primary .banner {
+/* #primary .banner {
   margin-bottom: 6rem!important;
-}
+} */
 
 #primary .banner--noimage {
   /* padding: 11rem calc((100vw - 1200px) / 3) 10rem!important; */
   padding: 4rem 10vw 0!important;
   position: relative;
-  margin-bottom: calc(6rem + 7.2917vw)!important;
+  margin-bottom: 7vw!important;
 }
 
 /* .banner--noimage.has-salamander-black-background-color::after {
@@ -873,9 +878,9 @@ address {
   margin-bottom: 6rem!important;
 } */
 
-#primary .wp-block-columns {
+/* #primary .wp-block-columns {
   margin-bottom: 0!important;
-}
+} */
 
 /* Zig Zag */
 .zigzag .wp-block-column {
@@ -922,14 +927,14 @@ address {
 /* ** */
 
 /* Wavy Groups */
-#primary .wave-group {
+.wave-group {
   /* padding-bottom: 6rem; */
-  margin-bottom: calc(6rem + 8vw)!important;
+  margin-bottom: 8vw;
 }
 
-.wave-group--bottom {
+/* .wave-group--bottom {
   padding-bottom: 12rem;
-}
+} */
 
 /* .wave-group h2 {
   margin-bottom: 6rem!important;
@@ -1007,9 +1012,9 @@ address {
   margin-bottom: 0!important;
 } */
 
-.home #primary .wave-group:last-of-type {
+/* .home #primary .wave-group:last-of-type {
   margin-bottom: 0!important;
-}
+} */
 
 
 /*============= CONTACT PAGE STYLES: =============
