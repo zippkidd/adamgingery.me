@@ -923,7 +923,7 @@ address {
 .zigzag .wp-block-group__inner-container > p {
   /* width: 75%; */
   margin: 0 5vw 6rem!important;
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
 }
 
 .zigzag .content {
@@ -1085,7 +1085,7 @@ footer p {
     display: none;
   }
   .wp-block-columns .wp-block-column {
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
 
   .wp-block-columns .wp-block-column:last-of-type {
@@ -1122,6 +1122,9 @@ footer p {
     width: 1rem;
     height: 1rem;
     top: -.5rem;
+  }
+  .wave-group .wp-block-columns {
+    margin-bottom: 0!important;
   }
 }
 
@@ -1229,7 +1232,7 @@ footer p {
     padding: 6rem 5vw;
   }
   .zigzag .wp-block-group__inner-container > p {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     width: 80%;
     margin-left: auto!important;
     margin-right: auto!important;
