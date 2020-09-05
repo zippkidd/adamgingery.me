@@ -402,8 +402,17 @@ h5,
 h6 {
   font-family: var(--montserrat);
   font-weight: 600;
+  margin-top: 3rem!important;
   margin-bottom: 3rem!important;
   color: var(--jetblack)!important;
+}
+
+.cntnt-sctn>h2:first-child,
+.cntnt-sctn>h3:first-child,
+.cntnt-sctn>h4:first-child,
+.cntnt-sctn>h5:first-child,
+.cntnt-sctn>h6:first-child {
+  margin-top: 0!important;
 }
 
 h1 {
@@ -707,6 +716,9 @@ address {
 /* #primary .banner {
   margin-bottom: 6rem!important;
 } */
+#primary .banner {
+  margin-bottom: var(--cntnt-spacing);
+}
 
 #primary .banner--noimage {
   /* padding: 11rem calc((100vw - 1200px) / 3) 10rem!important; */
@@ -812,6 +824,10 @@ address {
   position: relative;
 }
 
+.banner .wp-block-columns {
+  margin-bottom: 0;
+}
+
 .banner .wp-block-column:last-of-type::before {
   content: '';
   position: absolute;
@@ -874,7 +890,7 @@ address {
 #primary {
   margin-top: 0!important;
   padding-top: 0!important;
-  margin-bottom: 6rem!important;
+  margin-bottom: var(--cntnt-spacing)!important;
   padding-bottom: 0;
 }
 
