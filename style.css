@@ -552,6 +552,10 @@ address {
   font-weight: 900 !important;    
 }
 
+p.first {
+  font-size: 2rem;
+}
+
 
 
 /*================ HEADER STYLES: ================
@@ -704,7 +708,7 @@ address {
   /* padding: 11rem calc((100vw - 1200px) / 3) 10rem!important; */
   padding: 4rem 10vw 0!important;
   position: relative;
-  margin-bottom: 7vw!important;
+  margin-bottom: calc( var(--cntnt-spacing) + 7vw)!important;
 }
 
 /* .banner--noimage.has-salamander-black-background-color::after {
@@ -994,10 +998,6 @@ address {
 }
 
 /* ** */
-
-.subbanner p {
-  font-size: 2rem;
-}
 
 /*=============== HOME PAGE STYLES: ===============
 ==================================================*/

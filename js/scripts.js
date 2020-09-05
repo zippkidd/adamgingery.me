@@ -138,6 +138,10 @@
         title.classList.add('longtitle');
       }
     }
+
+    if (document.querySelector('p')) {
+      document.querySelector('p').classList.add('first');
+    }
   }
 
   function allLoaded() {
