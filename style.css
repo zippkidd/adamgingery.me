@@ -806,6 +806,7 @@ address {
 .banner h1,
 .banner h2 {
   line-height: 1!important;
+  margin: 0!important;;
 }
 
 .banner h1 {
