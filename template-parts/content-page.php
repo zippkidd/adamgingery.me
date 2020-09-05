@@ -37,6 +37,16 @@
 				?>
 	>
 
+		<?php if (!is_page_template('page-landing.php')): ?>
+
+			<div class="wp-block-group alignfull banner banner--noimage <?php echo resolveBannerBG(); ?> has-background">
+				<div class="wp-block-group__inner-container">
+					<h1 class="has-text-align-center has-white-color has-text-color"><?php the_title(); ?></h1>
+				</div>
+			</div>
+
+		<?php endif; ?>
+
 		<?php astra_entry_content_before(); ?>
 
 		<?php the_content(); ?>

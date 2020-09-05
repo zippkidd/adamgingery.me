@@ -358,6 +358,18 @@ function resolvePrimaryMenu() {
 }
 
 /**
+ * Resolve which banner background class based on silo
+ * Home || Marketing = salamander-black
+ * Music || Podcast = oxford-blue
+ */
+function resolveBannerBG() {
+	if ( isRelated(MUSIC_PARENT, MUSIC_CATEGORY) || isRelated(PODCAST_MAIN_PARENT, PODCAST_MAIN_CATEGORY) ) {
+		return 'has-oxford-blue-background-color';
+	}
+	return 'has-salamander-black-background-color';
+}
+
+/**
   * Resolve which blog category to display based on silo
   *
   * @return string
