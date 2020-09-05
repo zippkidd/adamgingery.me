@@ -37,6 +37,9 @@
 				?>
 	>
 
+
+		<?php astra_entry_content_before(); ?>
+
 		<?php if (!is_page_template('page-landing.php')): ?>
 
 			<div class="wp-block-group alignfull banner banner--noimage <?php echo resolveBannerBG(); ?> has-background">
@@ -46,9 +49,7 @@
 			</div>
 
 		<?php endif; ?>
-
-		<?php astra_entry_content_before(); ?>
-
+		
 		<?php the_content(); ?>
 
 		<?php astra_entry_content_after(); ?>
