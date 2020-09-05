@@ -244,7 +244,7 @@ body.stop-scroll {
   padding-bottom: var(--cntnt-spacing) !important;
 }
 
-.cntnt-sctn:first-child {
+.cntnt-sctn:first-of-type {
   padding-top: var(--cnt-spacing)!important;
 }
 
