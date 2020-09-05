@@ -865,13 +865,13 @@ address {
   padding-bottom: 0;
 }
 
-.primary .wp-block-group {
+/* .primary .wp-block-group {
   margin-bottom: 12rem!important;
-}
+} */
 
-#primary .wp-block-group:last-of-type {
+/* #primary .wp-block-group:last-of-type {
   margin-bottom: 6rem!important;
-}
+} */
 
 #primary .wp-block-columns {
   margin-bottom: 0!important;
@@ -1003,9 +1003,9 @@ address {
   margin-left: 6rem;
 } */
 
-.home #primary .wp-block-group:last-of-type {
+/* .home #primary .wp-block-group:last-of-type {
   margin-bottom: 0!important;
-}
+} */
 
 
 /*============= CONTACT PAGE STYLES: =============
