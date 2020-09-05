@@ -28,7 +28,7 @@
 
 	<?php if (!is_page_template('page-landing.php')): ?>
 
-		<header class="entry-header <?php astra_entry_header_class(); ?>">
+		<header class="entry-header <?php echo resolveHeaderClass() . ' '; astra_entry_header_class(); ?>">
 
 			<?php astra_get_post_thumbnail(); ?>
 
