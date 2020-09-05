@@ -364,9 +364,9 @@ function resolvePrimaryMenu() {
  */
 function resolveBannerBG() {
 	if ( isRelated(MUSIC_PARENT, MUSIC_CATEGORY) || isRelated(PODCAST_MAIN_PARENT, PODCAST_MAIN_CATEGORY) ) {
-		return 'has-salamander-black-background-color';
+		return 'has-oxford-blue-background-color';
 	}
-	return 'has-oxford-blue-background-color';
+	return 'has-salamander-black-background-color';
 }
 
 /**
