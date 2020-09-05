@@ -139,9 +139,9 @@
       }
     }
 
-    if (document.querySelector('p')) {
-      document.querySelector('p').classList.add('first');
-    }
+    // if (document.querySelector('p') && document.querySelector('body:not(.disable-first-p)')) {
+    //   document.querySelector('p').classList.add('first');
+    // }
   }
 
   function allLoaded() {

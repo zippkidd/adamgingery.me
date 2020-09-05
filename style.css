@@ -552,9 +552,9 @@ address {
   font-weight: 900 !important;    
 }
 
-p.first {
+/* p.first {
   font-size: 2rem;
-}
+} */
 
 
 
@@ -1139,9 +1139,9 @@ footer p {
 
 /*------------------- [max 980px] ------------------*/
 @media only screen and (max-width: 980px) {
-  #primary .banner {
+  /* #primary .banner {
     margin-bottom: calc(6vw + 7.5vw)!important;
-  }
+  } */
 
   .banner.has-salamander-black-background-color,
   .banner.has-oxford-blue-background-color {
