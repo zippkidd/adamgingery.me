@@ -240,12 +240,12 @@ body.stop-scroll {
 }
 
 .cntnt-sctn {
-  padding-top: var(--cntnt-spacing)!important;
+  /* padding-top: var(--cntnt-spacing)!important; */
   padding-bottom: var(--cntnt-spacing) !important;
 }
 
 .cntnt-sctn:first-child {
-  padding-top: 0!important;
+  padding-top: var(--cnt-spacing)!important;
 }
 
 .cntnt-sctn:last-of-type {
