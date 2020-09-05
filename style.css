@@ -244,6 +244,10 @@ body.stop-scroll {
   padding-bottom: var(--cntnt-spacing) !important;
 }
 
+.cntnt-sctn:first-child {
+  padding-top: 0!important;
+}
+
 .cntnt-sctn:last-of-type {
   padding-bottom: 0!important;
 }
