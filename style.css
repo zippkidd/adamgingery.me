@@ -282,9 +282,9 @@ input[type="submit"],
   margin-bottom: 3.2em;
 }
 
-.wp-block-group>div:last-child .wp-block-button__link {
+/* .wp-block-group>div:last-child .wp-block-button__link {
   margin-bottom: 0;
-}
+} */
 
 .wp-block-button__link,
 #contactSubmit   {
@@ -916,9 +916,9 @@ address {
   margin: 1.6em 0 0!important;
 } */
 
-.wp-block-buttons:last-of-type .wp-block-button__link {
+/* .wp-block-buttons:last-of-type .wp-block-button__link {
   margin: 3rem 0 0!important;
-}
+} */
 /* ** */
 
 /* Wavy Groups */
@@ -1006,6 +1006,10 @@ address {
 /* .home #primary .wp-block-group:last-of-type {
   margin-bottom: 0!important;
 } */
+
+.home #primary .wave-group:last-of-type {
+  margin-bottom: 0!important;
+}
 
 
 /*============= CONTACT PAGE STYLES: =============
