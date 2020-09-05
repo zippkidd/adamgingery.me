@@ -26,27 +26,6 @@
 
 	<?php astra_entry_top(); ?>
 
-	<?php if (!is_page_template('page-landing.php')): ?>
-
-		<header class="entry-header <?php echo resolveHeaderClass() . ' '; astra_entry_header_class(); ?>">
-
-			<?php astra_get_post_thumbnail(); ?>
-
-			<?php
-			astra_the_title(
-				'<h1 class="entry-title" ' . astra_attr(
-					'article-title-content-page',
-					array(
-						'class' => '',
-					)
-				) . '>',
-				'</h1>'
-			);
-			?>
-		</header><!-- .entry-header -->
-
-	<?php endif; ?>
-
 	<div class="entry-content clear" 
 		<?php
 				echo astra_attr(
@@ -57,6 +36,16 @@
 				);
 				?>
 	>
+
+		<?php if (!is_page_template('page-landing.php')): ?>
+
+			<div class="wp-block-group alignfull banner banner--noimage <?php echo resolveBannerBG(); ?> has-background">
+				<div class="wp-block-group__inner-container">
+					<h1 class="has-text-align-center has-white-color has-text-color"><?php the_title(); ?></h1>
+				</div>
+			</div>
+
+		<?php endif; ?>
 
 		<?php astra_entry_content_before(); ?>
 
