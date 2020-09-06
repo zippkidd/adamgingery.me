@@ -1182,6 +1182,9 @@ footer p {
 
 /*------------------- [max 640px] ------------------*/
 @media only screen and (max-width: 640px) {
+  .banner h1.longword {
+    font-size: 4rem;
+  }
   .tiles .wp-block-button {
     grid-column-start: 1!important;
     grid-column-end: 9!important;
