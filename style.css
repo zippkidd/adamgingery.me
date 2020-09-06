@@ -1131,6 +1131,35 @@ address {
 
 /*================= BLOG STYLES: =================
 ==================================================*/
+.blog .entry-title {
+  margin-top: 0!important;
+}
+
+.blog .entry-title a {
+  color: var(--jetblack);
+  font-weight: 600;
+}
+
+.nav-links a,
+.nav-links .current {
+  display: inline-block;
+  padding: 1rem 2rem!important;
+  color: var(--white)!important;
+  background: var(--copperred);
+  font-weight: 600;
+  font-size: 1.8rem!important;
+  height: auto!important;
+  width: auto!important;
+}
+
+.nav-links .current {
+  background: var(--oxfordblue);
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+  background: var(--darkcopperred);
+}
 
 
 /*=============== SUB PAGE STYLES: ===============
@@ -1162,6 +1191,12 @@ footer p {
 ==================================================*/
 /*------------------- [min 400px] ------------------*/
 @media only screen and (min-width: 400px) {}
+
+@media only screen and (max-width:420px) {
+  .single .post-navigation .nav-next a, .single .post-navigation .nav-previous a {
+      width: 100%!important;
+  }
+}
 
 /*------------------- [min 451px] ------------------*/
 @media only screen and (min-width: 451px) {}
