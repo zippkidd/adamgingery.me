@@ -137,6 +137,12 @@
       if (title.innerText.length > 30) {
         title.classList.add('longtitle');
       }
+      var titleWords = title.innerText.split(' ');
+      for (var i = 0; i < titleWords.length; i++) {
+        if (titleWords[i].length > 10) {
+          title.classList.add('longword');
+        }
+      }
     }
 
     // if (document.querySelector('p') && document.querySelector('body:not(.disable-first-p)')) {
