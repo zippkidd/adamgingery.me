@@ -20,13 +20,18 @@ get_header( 'blog' ); ?>
 
 		<?php astra_primary_content_top(); ?>
 
-		<?php //astra_content_loop(); ?>
+		<?php
+			$title = get_the_title();
+			if ( is_home() ) {
+				$title = 'Blog';
+			}
+		?>
 
 		<main id="main" class="site-main">
 			<div class="entry-content clear">
 				<div class="wp-block-group alignfull banner banner--noimage <?php echo resolveBannerBG(); ?> has-background">
 					<div class="wp-block-group__inner-container">
-						<h1 class="has-text-align-center has-white-color has-text-color">Blog</h1>
+						<h1 class="has-text-align-center has-white-color has-text-color"><?php echo $title; ?></h1>
 					</div>
 				</div>
 				<?php

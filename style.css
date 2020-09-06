@@ -144,7 +144,7 @@
 
   --margin-width: 6vw;
   --stndrd-width: calc(100vw - (var(--margin-width) + var(--margin-width)));
-  --cntnt-spacing: 4rem;
+  --cntnt-spacing: 6rem;
   --playfair-display: 'Playfair Display', serif;
   --noto-sans: 'Noto Sans', sans-serif;
 }
@@ -227,6 +227,10 @@ body.stop-scroll {
   border: .1rem solid var(--salamanderblack);
 }
 
+.wp-block-embed-youtube {
+  margin-top: var(--cntnt-spacing);
+}
+
 .stndrd-rw {
   width: var(--stndrd-width) !important;
   max-width: var(--stndrd-width) !important;
@@ -240,7 +244,16 @@ body.stop-scroll {
 }
 
 .cntnt-sctn {
-  padding: var(--cntnt-spacing) 0 !important;
+  /* padding-top: var(--cntnt-spacing)!important; */
+  padding-bottom: var(--cntnt-spacing) !important;
+}
+
+.cntnt-sctn:first-of-type {
+  padding-top: var(--cnt-spacing)!important;
+}
+
+.cntnt-sctn:last-of-type {
+  padding-bottom: 0!important;
 }
 
 .mx-auto {
@@ -249,7 +262,7 @@ body.stop-scroll {
   margin-right: auto !important;
 }
 
-.mb-0 {
+body .mb-0 {
   margin-bottom: 0!important;
 }
 
@@ -282,9 +295,9 @@ input[type="submit"],
   margin-bottom: 3.2em;
 }
 
-.wp-block-group>div:last-child .wp-block-button__link {
+/* .wp-block-group>div:last-child .wp-block-button__link {
   margin-bottom: 0;
-}
+} */
 
 .wp-block-button__link,
 #contactSubmit   {
@@ -381,7 +394,7 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.2;
+  line-height: 1.2!important;
   /* text-align: left; */
   /* padding-bottom: 1em; */
 }
@@ -393,8 +406,17 @@ h5,
 h6 {
   font-family: var(--montserrat);
   font-weight: 600;
+  margin-top: 3rem!important;
   margin-bottom: 3rem!important;
   color: var(--jetblack)!important;
+}
+
+.cntnt-sctn>h2:first-child,
+.cntnt-sctn>h3:first-child,
+.cntnt-sctn>h4:first-child,
+.cntnt-sctn>h5:first-child,
+.cntnt-sctn>h6:first-child {
+  margin-top: 0!important;
 }
 
 h1 {
@@ -547,6 +569,10 @@ address {
   font-weight: 900 !important;    
 }
 
+/* p.first {
+  font-size: 2rem;
+} */
+
 
 
 /*================ HEADER STYLES: ================
@@ -691,15 +717,18 @@ address {
 
 /*================= BANNER STYLES: ==================
 =====================================================*/
-#primary .banner {
+/* #primary .banner {
   margin-bottom: 6rem!important;
+} */
+#primary .banner {
+  margin-bottom: var(--cntnt-spacing);
 }
 
 #primary .banner--noimage {
   /* padding: 11rem calc((100vw - 1200px) / 3) 10rem!important; */
   padding: 4rem 10vw 0!important;
   position: relative;
-  margin-bottom: calc(6rem + 7.2917vw)!important;
+  margin-bottom: calc( var(--cntnt-spacing) + 7vw)!important;
 }
 
 /* .banner--noimage.has-salamander-black-background-color::after {
@@ -781,6 +810,7 @@ address {
 .banner h1,
 .banner h2 {
   line-height: 1!important;
+  margin: 0!important;;
 }
 
 .banner h1 {
@@ -797,6 +827,10 @@ address {
   /* margin-right: calc((100vw - 1280px) / 2); */
   margin: 0;
   position: relative;
+}
+
+.banner .wp-block-columns {
+  margin-bottom: 0;
 }
 
 .banner .wp-block-column:last-of-type::before {
@@ -861,21 +895,21 @@ address {
 #primary {
   margin-top: 0!important;
   padding-top: 0!important;
-  margin-bottom: 6rem!important;
+  margin-bottom: var(--cntnt-spacing)!important;
   padding-bottom: 0;
 }
 
-.primary .wp-block-group {
+/* .primary .wp-block-group {
   margin-bottom: 12rem!important;
-}
+} */
 
-#primary .wp-block-group:last-of-type {
+/* #primary .wp-block-group:last-of-type {
   margin-bottom: 6rem!important;
-}
+} */
 
-#primary .wp-block-columns {
+/* #primary .wp-block-columns {
   margin-bottom: 0!important;
-}
+} */
 
 /* Zig Zag */
 .zigzag .wp-block-column {
@@ -893,7 +927,7 @@ address {
 .zigzag .wp-block-group__inner-container > p {
   /* width: 75%; */
   margin: 0 5vw 6rem!important;
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
 }
 
 .zigzag .content {
@@ -916,20 +950,21 @@ address {
   margin: 1.6em 0 0!important;
 } */
 
-.wp-block-buttons:last-of-type .wp-block-button__link {
+/* .wp-block-buttons:last-of-type .wp-block-button__link {
   margin: 3rem 0 0!important;
-}
+} */
 /* ** */
 
 /* Wavy Groups */
-#primary .wave-group {
+.wave-group {
   /* padding-bottom: 6rem; */
-  margin-bottom: calc(6rem + 8vw)!important;
+  /* margin-bottom: 8vw; */
+  margin-bottom: calc(8vw + var(--cntnt-spacing));
 }
 
-.wave-group--bottom {
+/* .wave-group--bottom {
   padding-bottom: 12rem;
-}
+} */
 
 /* .wave-group h2 {
   margin-bottom: 6rem!important;
@@ -990,10 +1025,6 @@ address {
 
 /* ** */
 
-.subbanner p {
-  font-size: 2rem;
-}
-
 /*=============== HOME PAGE STYLES: ===============
 ==================================================*/
 .home #primary {
@@ -1003,9 +1034,13 @@ address {
   margin-left: 6rem;
 } */
 
-.home #primary .wp-block-group:last-of-type {
+/* .home #primary .wp-block-group:last-of-type {
   margin-bottom: 0!important;
-}
+} */
+
+/* .home #primary .wave-group:last-of-type {
+  margin-bottom: 0!important;
+} */
 
 
 /*============= CONTACT PAGE STYLES: =============
@@ -1055,7 +1090,7 @@ footer p {
     display: none;
   }
   .wp-block-columns .wp-block-column {
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
 
   .wp-block-columns .wp-block-column:last-of-type {
@@ -1092,6 +1127,9 @@ footer p {
     width: 1rem;
     height: 1rem;
     top: -.5rem;
+  }
+  .wave-group .wp-block-columns {
+    margin-bottom: 0!important;
   }
 }
 
@@ -1130,9 +1168,9 @@ footer p {
 
 /*------------------- [max 980px] ------------------*/
 @media only screen and (max-width: 980px) {
-  #primary .banner {
+  /* #primary .banner {
     margin-bottom: calc(6vw + 7.5vw)!important;
-  }
+  } */
 
   .banner.has-salamander-black-background-color,
   .banner.has-oxford-blue-background-color {
@@ -1167,9 +1205,9 @@ footer p {
     padding: 4rem 10vw 1rem;
     margin-bottom: 0!important;
   }
-  .banner h1 {
+  /* .banner h1 {
     padding-bottom: 0;
-  }
+  } */
   .zigzag .content {
     padding: 2rem 5vw;
   }
@@ -1199,7 +1237,7 @@ footer p {
     padding: 6rem 5vw;
   }
   .zigzag .wp-block-group__inner-container > p {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     width: 80%;
     margin-left: auto!important;
     margin-right: auto!important;
