@@ -142,6 +142,20 @@
     // if (document.querySelector('p') && document.querySelector('body:not(.disable-first-p)')) {
     //   document.querySelector('p').classList.add('first');
     // }
+
+    // Add classes to leftover tiles in tiles grid
+    if (document.querySelector('.tiles')) {
+      var tileGrids = document.querySelectorAll('.tiles');
+      for (var i = 0; i < tileGrids.length; i++) {
+        var tiles = tileGrids[i].querySelectorAll('.wp-block-button');
+        if (tiles.length % 3 === 2) { // give last two tiles .tile--double
+          tiles[tiles.length - 1].classList.add('tile--double');
+          tiles[tiles.length - 2].classList.add('tile--double');
+        } else if (tiles.length % 3 === 1) { // give last tile .tile--single
+          tiles[tiles.length - 1].classList.add('tile--single');
+        }
+      }
+    }
   }
 
   function allLoaded() {
