@@ -1194,7 +1194,19 @@ footer p {
 
 @media only screen and (max-width:420px) {
   .single .post-navigation .nav-next a, .single .post-navigation .nav-previous a {
-      width: 100%!important;
+    width: 100%!important;
+  }
+  .ast-pagination .next.page-numbers, .ast-pagination .prev.page-numbers {
+    width: 100%!important;
+    text-align: center;
+  }
+
+  .ast-pagination .next.page-numbers {
+    margin-top: calc(var(--cntnt-spacing) / 2);
+  }
+
+  .ast-pagination .prev.page-numbers {
+    margin-bottom: calc(var(--cntnt-spacing) / 2);
   }
 }
 
