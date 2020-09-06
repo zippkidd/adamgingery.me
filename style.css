@@ -1011,7 +1011,8 @@ address {
 
 .wave-group--salamander::before {
   content: url(/wp-content/uploads/2020/09/wg-salamander-top.svg);
-  background: linear-gradient(to top, var(--salamanderblack) 1rem,#fff 1rem,#fff);
+  /* background: linear-gradient(to top, var(--salamanderblack) 1rem,#fff 1rem,#fff); */
+  background: var(--white);
   /* height: 14rem; */
   display: block;
   font-size: 0;
@@ -1020,6 +1021,7 @@ address {
 .wave-group--salamander::after {
   content: url(/wp-content/uploads/2020/09/wg-salamander-bottom.svg);
   /* background: linear-gradient(to top, var(--oxfordblue) 1rem, #fff 1rem, #fff); */
+  /* background: var(--white); */
   height: 0;
   display: block;
   /* transform: translateY(100%); */
@@ -1031,7 +1033,8 @@ address {
 
 .wave-group--oxford::before {
   content: url(/wp-content/uploads/2020/09/wg-oxford-top.svg);
-  background: linear-gradient(to top, var(--oxfordblue) 1rem,#fff 1rem,#fff);;
+  /* background: linear-gradient(to top, var(--oxfordblue) 1rem,#fff 1rem,#fff);; */
+  background: var(--white);
   /* height: 14rem; */
   display: block;
   font-size: 0;
