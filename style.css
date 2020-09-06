@@ -296,6 +296,10 @@ input[type="submit"],
   margin-bottom: calc(var(--cntnt-spacing) / 2);
 }
 
+.wp-block-buttons:last-child {
+  margin-bottom: 0;
+}
+
 /* .wp-block-group>div:last-child .wp-block-button__link {
   margin-bottom: 0;
 } */
