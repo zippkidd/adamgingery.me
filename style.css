@@ -891,6 +891,10 @@ address {
   flex-grow: 1!important;
 }
 
+.featured-in img {
+  box-shadow: .2rem .2rem .5rem var(--salamanderblack);
+}
+
 /*=============== ALL PAGE STYLES: ===============
 ==================================================*/
 #primary {
@@ -1026,7 +1030,18 @@ address {
 
 /* Tiles Grid */
 .tiles { /* .tiles.wp-block-group */
+  columns: 6 20rem;
+  column-gap: 1rem;
+}
 
+.tiles .wp-block-button {
+  margin: 0 1rem 1rem 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.tiles .wp-block-button__link {
+  line-height: 1.2;
 }
 
 /*=============== HOME PAGE STYLES: ===============
