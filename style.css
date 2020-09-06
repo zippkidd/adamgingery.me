@@ -1192,6 +1192,27 @@ footer p {
   .wave-group .wp-block-columns {
     margin-bottom: 0!important;
   }
+
+  .tiles {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .tiles .wp-block-button:nth-child(2n - 1),
+  .tiles .tile--double.wp-block-button:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .tiles .wp-block-button:nth-child(2n),
+  .tiles .tile--double.wp-block-button:last-of-type {
+    grid-column-start: 5;
+    grid-column-end: 9;
+  }
+
+  .tiles .tile--single.wp-block-button {
+    grid-column-start: 3;
+    grid-column-end: 7;
+  }
 }
 
 @media only screen and (max-width: 781px) and (min-width: 600px) {
