@@ -27,7 +27,7 @@
     
     <?php astra_entry_content_before(); ?>
 
-    <div class="wp-block-group alignfull banner banner--noimage <?php echo resolveBannerBG(); ?> has-background">
+    <div class="wp-block-group alignfull banner banner--noimage only-h1 <?php echo resolveBannerBG(); ?> has-background">
         <div class="wp-block-group__inner-container">
             <h1 class="has-text-align-center has-white-color has-text-color"><?php the_title(); ?></h1>
         </div>

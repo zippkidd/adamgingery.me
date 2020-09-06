@@ -823,6 +823,10 @@ address {
   margin: 0!important;;
 }
 
+.banner.only-h1 h1 {
+  line-height: 1.2!important;
+}
+
 .banner h1 {
   /* font-size: 8rem; */
   font-size: 6rem;
