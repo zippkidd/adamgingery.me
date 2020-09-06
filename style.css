@@ -1037,6 +1037,10 @@ address {
   margin-bottom: 6rem!important;
 }
 
+.wave-group:last-of-type {
+  padding-bottom: var(--cntnt-spacing);
+}
+
 /* Tiles Grid */
 .tiles { /* .tiles.wp-block-group */
   display: grid;
