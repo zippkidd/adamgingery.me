@@ -227,6 +227,10 @@ body.stop-scroll {
   border: .1rem solid var(--salamanderblack);
 }
 
+.wp-block-embed-youtube {
+  margin-top: var(--cntnt-spacing);
+}
+
 .stndrd-rw {
   width: var(--stndrd-width) !important;
   max-width: var(--stndrd-width) !important;
@@ -954,7 +958,8 @@ address {
 /* Wavy Groups */
 .wave-group {
   /* padding-bottom: 6rem; */
-  margin-bottom: 8vw;
+  /* margin-bottom: 8vw; */
+  margin-bottom: calc(8vw + var(--cntnt-spacing));
 }
 
 /* .wave-group--bottom {
