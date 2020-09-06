@@ -1023,7 +1023,10 @@ address {
   margin-bottom: 6rem!important;
 }
 
-/* ** */
+/* Tiles Grid */
+.tiles { /* .tiles.wp-block-group */
+
+}
 
 /*=============== HOME PAGE STYLES: ===============
 ==================================================*/
