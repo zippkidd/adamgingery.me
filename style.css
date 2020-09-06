@@ -1010,7 +1010,7 @@ address {
 }
 
 .wave-group--salamander::before {
-  content: url(/wp-content/uploads/2020/09/wave-group-salamander-top.svg);
+  content: url(/wp-content/uploads/2020/09/wg-salamander-top.svg);
   background: linear-gradient(to top, var(--salamanderblack) 1rem,#fff 1rem,#fff);
   /* height: 14rem; */
   display: block;
@@ -1018,7 +1018,7 @@ address {
 }
 
 .wave-group--salamander::after {
-  content: url(/wp-content/uploads/2020/09/wave-group-salamander-bottom.svg);
+  content: url(/wp-content/uploads/2020/09/wg-salamander-bottom.svg);
   /* background: linear-gradient(to top, var(--oxfordblue) 1rem, #fff 1rem, #fff); */
   height: 0;
   display: block;
@@ -1030,7 +1030,7 @@ address {
 }
 
 .wave-group--oxford::before {
-  content: url(/wp-content/uploads/2020/09/wave-group-oxford-top.svg);
+  content: url(/wp-content/uploads/2020/09/wg-oxford-top.svg);
   background: linear-gradient(to top, var(--oxfordblue) 1rem,#fff 1rem,#fff);;
   /* height: 14rem; */
   display: block;
@@ -1355,7 +1355,7 @@ footer p {
     position: relative;
   }
   .banner.has-salamander-black-background-color::after {
-    content: url(/wp-content/uploads/2020/08/banner-noimage-wave-salamander.svg);
+    content: url(/wp-content/uploads/2020/09/banner-wave-salamander.svg);
     background: transparent;
     display: block;
     position: relative;
@@ -1365,7 +1365,7 @@ footer p {
     height: 0;
   }
   .banner.has-oxford-blue-background-color::after {
-    content: url(/wp-content/uploads/2020/08/banner-noimage-wave-oxford.svg);
+    content: url(/wp-content/uploads/2020/09/banner-wave-oxford.svg);
     background: transparent;
     display: block;
     position: relative;
