@@ -195,7 +195,7 @@ body.stop-scroll {
 }
 /*----------- Layout: -----------*/
 .wp-block-separator {
-  margin: var(--cntnt-spacing) auto;
+  margin: calc(var(--cntnt-spacing) * 1.5) auto;
   /* background: var(--salamanderblack); */
   background: unset;
   position: relative;
