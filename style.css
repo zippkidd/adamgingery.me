@@ -1010,7 +1010,7 @@ address {
 }
 
 .wave-group--salamander::before {
-  content: url(/wp-content/uploads/2020/08/header-group-top-double.svg);
+  content: url(/wp-content/uploads/2020/09/wave-group-salamander-top.svg);
   background: linear-gradient(to top, var(--salamanderblack) 1rem,#fff 1rem,#fff);
   /* height: 14rem; */
   display: block;
@@ -1018,7 +1018,7 @@ address {
 }
 
 .wave-group--salamander::after {
-  content: url(/wp-content/uploads/2020/08/header-group-bottom-double.svg);
+  content: url(/wp-content/uploads/2020/09/wave-group-salamander-bottom.svg);
   /* background: linear-gradient(to top, var(--oxfordblue) 1rem, #fff 1rem, #fff); */
   height: 0;
   display: block;
@@ -1030,7 +1030,7 @@ address {
 }
 
 .wave-group--oxford::before {
-  content: url(/wp-content/uploads/2020/08/header-group-top-double-oxford.svg);
+  content: url(/wp-content/uploads/2020/09/wave-group-oxford-top.svg);
   background: linear-gradient(to top, var(--oxfordblue) 1rem,#fff 1rem,#fff);;
   /* height: 14rem; */
   display: block;
