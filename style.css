@@ -602,8 +602,9 @@ address {
 .main-header-menu .current-menu-item > .menu-link,
 .main-header-menu li:not(.current-menu-item) > .menu-link:hover,
 .main-header-menu .menu-item:hover > .menu-link,
-.main-header-menu .current-menu-ancestor>.menu-link {
-  color: var(--darkcopperred);
+.main-header-menu .current-menu-ancestor>.menu-link,
+.main-header-menu .current-menu-ancestor>span {
+  color: var(--darkcopperred)!important;
 }
 
 .ast-desktop .main-header-menu.submenu-with-border .sub-menu {
@@ -615,6 +616,13 @@ address {
 } */
 .main-header-bar {
   border: none!important;
+}
+
+.main-header-menu .menu-link,
+.ast-header-custom-item a,
+.main-header-menu .menu-item > span {
+  color: var(--jetblack);
+  padding: 0 1em;
 }
 
 /*=============== SHORTCODES STYLES: =================
