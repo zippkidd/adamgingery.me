@@ -1034,18 +1034,56 @@ address {
 
 /* Tiles Grid */
 .tiles { /* .tiles.wp-block-group */
-  columns: 6 20rem;
-  column-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
 }
 
 .tiles .wp-block-button {
-  margin: 0 1rem 1rem 0;
-  display: inline-block;
-  width: 100%;
+  margin: 0;
 }
 
 .tiles .wp-block-button__link {
-  line-height: 1.2;
+  line-height: 1.4;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-radius: 1.5rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tiles .wp-block-button:nth-child(3n - 2) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.tiles .wp-block-button:nth-child(3n - 1) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.tiles .wp-block-button:nth-child(3n) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.tiles .tile--single.wp-block-button {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.tiles .tile--double.wp-block-button {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.tiles .tile--double.wp-block-button:last-of-type {
+  grid-column-start: 4;
+  grid-column-end: 6;
 }
 
 /*=============== HOME PAGE STYLES: ===============
