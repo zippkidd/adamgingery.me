@@ -249,7 +249,7 @@ body.stop-scroll {
   padding-bottom: var(--cntnt-spacing) !important;
 }
 
-.cntnt-sctn .wp-block-image {
+.wp-block-image {
   margin-bottom: calc(var(--cntnt-spacing) / 2);
 }
 
