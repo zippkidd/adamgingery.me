@@ -507,6 +507,7 @@ blockquote {
   font-style: normal;
   border-color: var(--platinum);
   padding-top: 0!important;
+  padding-bottom: 0!important;
 }
 
 blockquote cite {
