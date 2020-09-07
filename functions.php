@@ -225,6 +225,11 @@ add_theme_support( 'editor-color-palette', array(
 		'color'	=> '#386150',
 	),
 	array(
+		'name' => __( 'Dark Green 2', 'astraChild' ),
+		'slug' => 'dark-green-2',
+		'color'	=> '#38761d',
+	),
+	array(
 		'name'	=> __( 'Mantis Green', 'astraChild' ),
 		'slug'	=> 'mantis-green',
 		'color'	=> '#6CC551',

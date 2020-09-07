@@ -122,13 +122,14 @@
   --platinum: #e5e5e5;
   --jetblack: #121212;
   --salamanderblack: #303f3f;
+  --darkgreen2: #38761d;
 
   /* Color Palette https://coolors.co/004e64-00a5cf-9fffcb-25a18e-7ae582 */
-  --midnighteagle: #004E64;
-  --cerulean: #00A5CF
-  --aquamarine: #9FFFCB;
-  --persiangreen: #25A18E;
-  --lightgreen: #7AE582;
+  /* --midnighteagle: #004E64; */
+  /* --cerulean: #00A5CF */
+  /* --aquamarine: #9FFFCB; */
+  /* --persiangreen: #25A18E; */
+  /* --lightgreen: #7AE582; */
 
   /* Color Palette  https://coolors.co/6cc551-9ffcdf-386150-43281c-c06e52 */
   --huntergreen: #386150;
@@ -137,7 +138,7 @@
   --lightcopperred: #C06E52;
   --copperred: #AD5639;
   --darkcopperred: #7D3922;
-  --bistre: #43281c;
+  /* --bistre: #43281c; */
 
   --indigo: #083D77;
   --oxfordblue: #0E1428;
@@ -373,6 +374,13 @@ input[type="submit"],
 }
 .has-hunter-green-background-color {
   background-color: var(--huntergreen)!important;
+}
+
+.has-dark-green-2-color {
+  color: var(--darkgreen2)!important;
+}
+.has-dark-green-2-background-color {
+  background-color: var(--darkgreen2)!important;
 }
 
 .has-copper-red-color {
