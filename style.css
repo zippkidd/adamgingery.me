@@ -1031,15 +1031,19 @@ address {
   /* height: 14rem; */
   display: block;
   font-size: 0;
+  position: relative;
+  top: -.2rem;
 }
 
 .wave-group--salamander::after {
   content: url(/wp-content/uploads/2020/09/wg-salamander-bottom.svg);
   /* background: linear-gradient(to top, var(--oxfordblue) 1rem, #fff 1rem, #fff); */
-  /* background: var(--white); */
-  height: 0;
+  background: var(--white);
+  /* height: 0; */
   display: block;
   /* transform: translateY(100%); */
+  position: relative;
+  bottom: -.2rem;
 }
 
 .zigzag.wave-group--salamander .content {
@@ -1053,29 +1057,39 @@ address {
   /* height: 14rem; */
   display: block;
   font-size: 0;
+  position: relative;
+  top: -.2rem;
 }
 
 /* Phantom Line Fix */
 .wave-group--oxford>div,
 .wave-group--salamander>div {
   position: relative;
+  z-index: 1;
 }
 
 .wave-group--oxford>div::before,
-.wave-group--salamander>div::before {
+.wave-group--salamander>div::before,
+.wave-group--salamander>div::after {
   content: '';
   display: block;
   position: absolute;
   top: 0;
-  height: .1rem;
-  top: -3.1rem;
+  height: .6rem;
+  top: -3.4rem;
   background: var(--oxfordblue);
-  z-index: 1000;
+  z-index: -1;
   width: 100vw;
 }
 
-.wave-group--salamander>div::before {
+.wave-group--salamander>div::before,
+.wave-group--salamander>div::after {
   background: var(--salamanderblack);
+}
+
+.wave-group--salamander>div::after {
+  top: unset;
+  bottom: -.3rem;
 }
 
 .zigzag.wave-group--oxford .content {
