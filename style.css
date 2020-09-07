@@ -1553,4 +1553,7 @@ footer p {
   .banner h2 {
     font-size: 3rem;
   }
+  .banner p {
+    font-size: 2rem;
+  }
 }
