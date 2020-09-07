@@ -42,11 +42,30 @@
 
 		<?php if (!is_page_template('page-landing.php')): ?>
 
-			<div class="wp-block-group alignfull banner banner--noimage only-h1 <?php echo resolveBannerBG(); ?> has-background">
-				<div class="wp-block-group__inner-container">
-					<h1 class="has-text-align-center has-white-color has-text-color"><?php the_title(); ?></h1>
+			<?php if ( has_post_thumbnail() ): ?>
+
+				<div class="wp-block-group alignfull banner has-salamander-black-background-color has-background">
+					<div class="wp-block-group__inner-container">
+						<div class="wp-block-columns">
+							<div class="wp-block-column is-vertically-aligned-center banner__content">
+								<h1 class="has-white-color has-text-color"><?php the_title(); ?></h1>
+							</div>
+							<div class="wp-block-column is-vertically-aligned-center">
+								<figure class="wp-block-image alignfull size-large"><?php the_post_thumbnail(); ?></figure>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
+
+			<?php else: ?>
+
+				<div class="wp-block-group alignfull banner banner--noimage only-h1 <?php echo resolveBannerBG(); ?> has-background">
+					<div class="wp-block-group__inner-container">
+						<h1 class="has-text-align-center has-white-color has-text-color"><?php the_title(); ?></h1>
+					</div>
+				</div>
+
+			<?php endif; ?>
 
 		<?php endif; ?>
 		
