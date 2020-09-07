@@ -1111,6 +1111,7 @@ address {
   background: var(--oxfordblue);
   z-index: -1;
   width: 100vw;
+  left: calc(-50vw + 50%);
 }
 
 .wave-group--salamander>div::before,
@@ -1479,6 +1480,7 @@ footer p {
     background: var(--salamanderblack);
     z-index: -1;
     width: 100vw;
+    left: calc(-50vw + 50%);
   }
 
   .banner.has-oxford-blue-background-color>div::after {
