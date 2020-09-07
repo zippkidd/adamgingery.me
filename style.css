@@ -317,7 +317,8 @@ input[type="submit"],
 
 .wp-block-button__link:hover,
 .contactForm #contactSubmit:hover {
-	background-color: var(--darkcopperred)!important;
+  background-color: var(--darkcopperred)!important;
+  text-decoration: none!important;
 }
 
 /*----------- Colors: -----------*/
