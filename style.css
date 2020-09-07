@@ -1056,11 +1056,13 @@ address {
 }
 
 /* Phantom Line Fix */
-.wave-group--oxford>div {
+.wave-group--oxford>div,
+.wave-group--salamander>div {
   position: relative;
 }
 
-.wave-group--oxford>div::before {
+.wave-group--oxford>div::before,
+.wave-group--salamander>div::before {
   content: '';
   display: block;
   position: absolute;
@@ -1070,6 +1072,10 @@ address {
   background: var(--oxfordblue);
   z-index: 1000;
   width: 100vw;
+}
+
+.wave-group--salamander>div::before {
+  background: var(--salamanderblack);
 }
 
 .zigzag.wave-group--oxford .content {
