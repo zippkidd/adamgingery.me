@@ -1269,7 +1269,7 @@ footer p {
     margin-bottom: 0;
   }
   .zigzag .wp-block-columns .wp-block-column:last-of-type {
-    margin-bottom: 6rem;
+    margin-bottom: calc(var(--cntnt-spacing) / 2);
   }
 
   .zigzag .wp-block-buttons {
