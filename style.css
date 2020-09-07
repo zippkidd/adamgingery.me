@@ -253,6 +253,15 @@ body.stop-scroll {
   margin-bottom: calc(var(--cntnt-spacing) / 2);
 }
 
+.wp-block-media-text__media img {
+  width: auto;
+  margin: 0 auto;
+}
+
+.wp-block-media-text__media {
+  text-align: center;
+}
+
 .entry-content .wp-block-image:last-child {
   margin-top: calc(var(--cntnt-spacing) / 2);
 }
