@@ -834,6 +834,10 @@ address {
   margin: 0!important;;
 }
 
+.banner p {
+  font-size: 2.4rem;
+}
+
 .banner.only-h1 h1 {
   line-height: 1.2!important;
 }
