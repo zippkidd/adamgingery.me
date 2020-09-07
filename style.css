@@ -1048,6 +1048,23 @@ address {
   font-size: 0;
 }
 
+/* Phantom Line Fix */
+.wave-group--oxford>div {
+  position: relative;
+}
+
+.wave-group--oxford>div::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  height: .1rem;
+  top: -3.1rem;
+  background: var(--oxfordblue);
+  z-index: 1000;
+  width: 100vw;
+}
+
 .zigzag.wave-group--oxford .content {
   background-color: var(--oxfordblue)!important;
 }
