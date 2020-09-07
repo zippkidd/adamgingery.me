@@ -628,6 +628,20 @@ address {
   padding: 0 1em;
 }
 
+.main-header-bar .main-header-bar-navigation .menu-item-has-children>span::after {
+  content: "\e900";
+  display: inline-block;
+  font-family: Astra;
+  font-size: 9px;
+  font-size: .6rem;
+  font-weight: 700;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 10px;
+  line-height: normal;
+}
+
 /*=============== SHORTCODES STYLES: =================
 =====================================================*/
 /* Contact Form */
