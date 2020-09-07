@@ -253,6 +253,10 @@ body.stop-scroll {
   margin-bottom: calc(var(--cntnt-spacing) / 2);
 }
 
+.entry-content .wp-block-image:last-child {
+  margin-top: calc(var(--cntnt-spacing) / 2);
+}
+
 .cntnt-sctn:first-of-type {
   padding-top: var(--cnt-spacing)!important;
 }
