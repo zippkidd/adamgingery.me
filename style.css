@@ -1090,6 +1090,10 @@ address {
 
 .wave-group--salamander>div::after {
   top: unset;
+  bottom: -3.2rem;
+}
+
+.home .wave-group--salamander>div::after {
   bottom: -.3rem;
 }
 
@@ -1342,6 +1346,10 @@ footer p {
   }
   .wave-group .wp-block-columns {
     margin-bottom: 0!important;
+  }
+
+  .wave-group--salamander>div:after {
+    bottom: -.3rem;
   }
 
   .tiles {
