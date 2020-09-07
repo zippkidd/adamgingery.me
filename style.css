@@ -971,6 +971,10 @@ address {
   background-color: var(--whitesmoke);
 }
 
+.zigzag .content a {
+  color: var(--darkcopperred)!important;
+}
+
 /* .zigzag .content--left {
   padding-right: calc((100vw - 1200px) / 8);
 }
