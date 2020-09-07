@@ -996,7 +996,8 @@ address {
 .wave-group {
   /* padding-bottom: 6rem; */
   /* margin-bottom: 8vw; */
-  margin-bottom: calc(8vw + var(--cntnt-spacing));
+  /* margin-bottom: calc(8vw + var(--cntnt-spacing)); */
+  margin-bottom: var(--cntnt-spacing);
 }
 
 /* .wave-group--bottom {
