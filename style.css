@@ -971,7 +971,7 @@ address {
   background-color: var(--whitesmoke);
 }
 
-.zigzag .content a {
+.zigzag .content a:not(.wp-block-button__link) {
   color: var(--darkcopperred)!important;
 }
 
