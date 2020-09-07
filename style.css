@@ -1419,6 +1419,27 @@ footer p {
     /* bottom: -7.2917vw; */
     height: 0;
   }
+  .banner.has-salamander-black-background-color>div {
+    position: relative;
+    z-index: 1;
+  }
+
+  .banner.has-salamander-black-background-color>div::after,
+  .banner.has-oxford-blue-background-color>div::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: .6rem;
+    bottom: -.2rem;
+    background: var(--salamanderblack);
+    z-index: -1;
+    width: 100vw;
+  }
+
+  .banner.has-oxford-blue-background-color>div::after {
+    background: var(--oxfordblue);
+  }
+
   .banner.has-oxford-blue-background-color::after {
     content: url(/wp-content/uploads/2020/09/banner-wave-oxford.svg);
     background: transparent;
