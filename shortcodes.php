@@ -51,21 +51,21 @@ $html = <<<HTML
 		<div>
 			<figure class="has-text-align-center">
 				<!-- Slide Content Here -->
-				<a href="#"><img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt=""></a>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/voEGcAcErK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</figure>
 		</div>
 		<div>
 			<figure class="has-text-align-center">
 				<!-- Slide Content Here -->
-				<a href="#"><img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt=""></a>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/g3LEUKkknRE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</figure>
 		</div>
-		<div>
-			<figure class="has-text-align-center">
+		<!-- <div> -->
+			<!-- <figure class="has-text-align-center"> -->
 				<!-- Slide Content Here -->
-				<a href="#"><img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt=""></a>
-			</figure>
-		</div>
+				<!-- <a href="#"><img src="/wp-content/uploads/2020/08/podcast-microphone-monitors-grayscale-825-compressed.jpg" alt=""></a> -->
+			<!-- </figure> -->
+		<!-- </div> -->
 	</div>
 	<div class="next"></div>
 </div>
